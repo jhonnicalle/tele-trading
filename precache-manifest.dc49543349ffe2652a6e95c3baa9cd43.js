@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a74e241ca9fead7bc20570ef6636e378",
+    "revision": "8a4b01d48b19dfffe62a8bf73eb17610",
     "url": "/tele-trading/index.html"
   },
   {
-    "revision": "edc26f3357bc4adc474d",
-    "url": "/tele-trading/static/css/main.4b3daf16.chunk.css"
+    "revision": "1bbc1d9801b7203743c5",
+    "url": "/tele-trading/static/css/main.2b148ac1.chunk.css"
   },
   {
-    "revision": "81a85e087632ee99cd8d",
-    "url": "/tele-trading/static/js/2.5cd05173.chunk.js"
+    "revision": "5bb7e0154577eea155ab",
+    "url": "/tele-trading/static/js/2.2e22abe7.chunk.js"
   },
   {
     "revision": "6472a7d1d95598048b2f7b02095da167",
-    "url": "/tele-trading/static/js/2.5cd05173.chunk.js.LICENSE.txt"
+    "url": "/tele-trading/static/js/2.2e22abe7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "edc26f3357bc4adc474d",
-    "url": "/tele-trading/static/js/main.cf43511b.chunk.js"
+    "revision": "1bbc1d9801b7203743c5",
+    "url": "/tele-trading/static/js/main.1b66282c.chunk.js"
   },
   {
     "revision": "d49b4fea78871fbe8be8",
