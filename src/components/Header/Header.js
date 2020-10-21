@@ -16,14 +16,14 @@ const Header = () => {
             <Grid item className={classes.paper} xs={12} md={8} >
               <div className="home-info">
                 <h1 className="title">BOX</h1>
-                <p>Somos tu aliado de negocios en España, Portugal y China Contamos con la experiencia,
-                    acompañando a nuestros clientes en el proceso de optimización de manufacturación, compras
-                    y logísticas en La Península Ibérica, contamos con socios estratégicos en China, contribuyendo
-                    en el desarrollo de productos de calidad, precios competitivos, valores agregados y novedosas
-                    estrategias comerciales, dando como resultado la satisfacción de un negocio rentable a todos
-                    nuestros clientes. </p>
-              
-               
+                <p>
+                  Somos tu aliado de negocios en España, Portugal y China Contamos con la experiencia,
+                  acompañando a nuestros clientes en el proceso de optimización de manufacturación, compras
+                  y logísticas en La Península Ibérica, contamos con socios estratégicos en China, contribuyendo
+                  en el desarrollo de productos de calidad, precios competitivos, valores agregados y novedosas
+                  estrategias comerciales, dando como resultado la satisfacción de un negocio rentable a todos
+                  nuestros clientes. 
+                </p>            
               </div>
             </Grid>
           </Grid>
