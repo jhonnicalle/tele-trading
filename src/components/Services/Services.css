@@ -1,0 +1,33 @@
+.background-screen-services {
+  /* z-index: -999;
+  background: url('../../images/HEADER\ BACKGROUND.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100% ; */
+  background-color: #3e699b83;
+  height: 100%;
+  width: 100%;
+}
+
+.transparent-background-services {
+  background-color: #ac302088;
+  height: 100%;
+  width: 100%;
+}
+
+.home-info {
+  color: #f1f1f1;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.home-info h1{
+  font-size: 50px;
+}
+
+.home-info p{
+  font-size: 20px;
+}
