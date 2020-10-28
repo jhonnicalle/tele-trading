@@ -19,6 +19,7 @@ export const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(2),
   },
   button: {    
-    borderRadius: '20px'
+    borderRadius: '20px',
+    margin: '0 5px'
   },
 }));

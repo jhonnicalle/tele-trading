@@ -7,9 +7,14 @@
   background-size: cover;
   height: 100vh;
   width: 100% ; */
-  background-color: #3e699b83;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #3389dcc2;
   height: 100%;
   width: 100%;
+  
 }
 
 .transparent-background-services {
@@ -18,7 +23,7 @@
   width: 100%;
 }
 
-.home-info {
+/* .home-info {
   color: #f1f1f1;
   padding-right: 20px;
   text-align: center;
@@ -30,4 +35,4 @@
 
 .home-info p{
   font-size: 20px;
-}
+} */

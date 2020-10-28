@@ -1,0 +1,35 @@
+.background-screen-values {
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* background-color: #3e699b83; */
+  height: 100%;
+  width: 100%;
+}
+
+.transparent-background-values {
+  background-color: #ac302088;
+  height: 100%;
+  width: 100%;
+  
+}
+
+.image-values {
+  
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.image-values img{
+  
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
