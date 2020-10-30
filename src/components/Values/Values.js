@@ -67,10 +67,12 @@ const Values = () => {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
 
+ 
+
   return (
     <div className="background-screen-values">
       <Grid container>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={12} md={6} lg={6}>
           <Typography className={classes.bigTitle} variant='h3' align='center'>
             VALORES
           </Typography>
@@ -89,20 +91,20 @@ const Values = () => {
               className={classes.root}
               nextButton={
                 <Button size="small" onClick={handleNext} disabled={activeStep === maxSteps - 1}>
-                  Siguiente
+                  {/* Siguiente */}
                   {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
                 </Button>
               }
               backButton={
                 <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
                   {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
-                  Anterior
+                  {/* Anterior */}
                 </Button>
               }
             />
           </div>
         </Grid>
-        <Grid item xs={true} sm={6}>
+        <Grid item xs={true} sm={true} md={6} lg={6}>
           <img className='image-values' src={image} alt='Imagen de valores' />
         </Grid>
       </Grid>

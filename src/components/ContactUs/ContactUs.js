@@ -11,7 +11,7 @@ const ContactUs = () => {
     <div className='background-screen-contactus'>
       <div className='transparent-backgrund-contactus'>
         <Container>
-          <Typography variant="h3" align='center' className={classes.titleContact}>
+          <Typography variant="h4" align='center' className={classes.titleContact}>
             CONTACTANOS
           </Typography>
           <Grid container spacing={3}>

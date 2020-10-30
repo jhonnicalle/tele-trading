@@ -3,7 +3,7 @@ const { makeStyles } = require("@material-ui/core");
 export const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 800,
-    flexGrow: 1,
+    
     borderRadius: 15
   },
   bigTitle: {

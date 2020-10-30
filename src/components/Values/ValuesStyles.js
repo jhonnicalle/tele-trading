@@ -22,10 +22,10 @@ export const useStyles = makeStyles((theme) => ({
     borderRadius: 10
   },
   header: {
-    display: 'flex',
+    // display: 'flex',
     alignItems: 'center',
     padding: theme.spacing(2),
-    backgroundColor: theme.palette.background.default,
+    // backgroundColor: theme.palette.background.default,
   },
   img: {
     height: 300,

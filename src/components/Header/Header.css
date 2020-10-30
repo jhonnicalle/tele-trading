@@ -28,3 +28,93 @@
 .home-info p{
   font-size: 20px;
 }
+
+.logo2 {
+  display: block;
+  height: 200px;
+  margin: 0 auto;  
+}
+
+.home-info h1{
+  font-size: 50px;
+}
+
+.home-info p{
+  font-size: 20px;
+}
+
+@media screen and (max-width: 960px)  {
+  .section_logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 820px)  {
+
+  .home-info h1{
+    font-size: 40px;
+  }
+  
+  .home-info p{
+    font-size: 18px;
+  }
+
+ 
+}
+
+@media screen and (max-width: 735px)  {
+  .home-info {
+    /* margin-top: 30px; */
+    /* padding-top: 10px; */
+  }
+
+  .home-info h1{
+    font-size: 35px;
+  }
+  
+  .home-info p{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 555px)  {
+  .home-info {
+    /* margin-top: 40px; */
+    /* padding-top: 10px; */
+  }
+
+  .home-info h1{
+    font-size: 32px;
+  }
+  
+  .home-info p{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 450px)  {
+  .home-info {
+    /* margin-top: 50px; */
+    /* padding-top: 10px; */
+  }
+
+
+  .home-info h1{
+    font-size: 25px;
+  }
+  
+  .home-info p{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 350px)  {
+
+  .home-info h1{
+    font-size: 20px;
+  }
+  
+  .home-info p{
+    font-size: 14px;
+  }
+}

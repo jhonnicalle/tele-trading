@@ -10,13 +10,16 @@ import image from '../../images/SERVICES IMAGE.jpg'
 
 const Services = () => {
   const classes = useStyles()
+
+ 
+
   return (
     <div className='background-screen-services'>
       <Grid container>
-        <Grid item sm={false} md={6} lg={6}>
-          <img className='image-values' src={image} alt='Imagen de servicios' />
+        <Grid item xs={true} sm={true} md={6} lg={6}>
+          <img className='image-services' src={image} alt='Imagen de servicios' />
         </Grid>
-        <Grid item  md={6} lg={6}>
+        <Grid item xs={12} sm={12} md={6} lg={6}>
           <Typography className={classes.bigTitle} variant='h3' align='center'>
             SERVICIOS
           </Typography>
