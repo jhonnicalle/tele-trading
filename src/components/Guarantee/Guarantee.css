@@ -13,3 +13,23 @@
   width: 100%;
 }
 
+.image-guarantee {  
+  /* display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; */
+  width:auto; 
+  text-align:center;
+}
+
+.image-guarantee img{  
+  /* display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; */
+  width: 100%; 
+  height: 100%; 
+  object-fit: contain; 
+}

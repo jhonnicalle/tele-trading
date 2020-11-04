@@ -24,7 +24,7 @@ const App = () => {
           <Services />
           <Values />
           <Guarantee />
-          <Map location={location} zoomLevel={11} />
+          <Map location={location} zoomLevel={17} />
           <ContactUs />
         </div>
       

@@ -22,4 +22,10 @@ export const useStyles = makeStyles((theme) => ({
     borderRadius: '20px',
     margin: '0 5px'
   },
+  snackbar: {
+    width: '100%',
+    '& > * + *': {
+      marginTop: theme.spacing(2),
+    },
+  },
 }));

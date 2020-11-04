@@ -16,8 +16,8 @@ const Services = () => {
   return (
     <div className='background-screen-services'>
       <Grid container>
-        <Grid item xs={true} sm={true} md={6} lg={6}>
-          <img className='image-services' src={image} alt='Imagen de servicios' />
+        <Grid className='image-services' item xs={true} sm={true} md={6} lg={6}>
+          <img src={image} alt='Imagen de servicios' />
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={6}>
           <Typography className={classes.bigTitle} variant='h3' align='center'>

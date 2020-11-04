@@ -41,8 +41,8 @@ const Guarantee = () => {
   return (
     <div className='background-screen-guarantee'>
       <Grid container>
-        <Grid item xs={true} sm={true} md={6} lg={6}>
-          <img className='image-services' src={image} alt='Imagen de servicios' />
+        <Grid className='image-guarantee' item xs={true} sm={true} md={6} lg={6}>
+          <img src={image} alt='Imagen de servicios' />
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={6}>
           <Typography className={classes.titleGuarantee} variant='h4' align='center'>

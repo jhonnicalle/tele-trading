@@ -104,8 +104,8 @@ const Values = () => {
             />
           </div>
         </Grid>
-        <Grid item xs={true} sm={true} md={6} lg={6}>
-          <img className='image-values' src={image} alt='Imagen de valores' />
+        <Grid className='image-values' item xs={true} sm={true} md={6} lg={6}>
+          <img src={image} alt='Imagen de valores' />
         </Grid>
       </Grid>
     </div>
