@@ -10,10 +10,9 @@ import Services from './components/Services/Services';
 import Values from './components/Values/Values';
 
 const location = {
-  address: '1600 Amphitheatre Parkway, Mountain View, california.',
-  lat: 10.478056,
-  lng: -66.911889,
-  
+  address: 'Calle Gral. Vara de Rey, 26, 26002 Logroño, La Rioja',
+  lat: 42.461729,
+  lng: -2.445833,  
 }
 
 const App = () => {
