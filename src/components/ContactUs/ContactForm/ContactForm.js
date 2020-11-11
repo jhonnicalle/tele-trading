@@ -1,6 +1,6 @@
 import { Button, Paper, Snackbar, TextField, Typography } from '@material-ui/core'
 import { Clear, Send } from '@material-ui/icons'
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useStyles } from '../ContactUsStyles'
 import emailjs from 'emailjs-com';
 import MuiAlert from '@material-ui/lab/Alert';
@@ -10,22 +10,34 @@ const Alert = (props) => {
 }
 
 const ContactForm = () => {
-  // Variables to form  
+  
+  // Variables to form
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
 
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [subject, setSubject] = useState('')
-  const [message, setMessage] = useState('')
+  // Error empty variables
+  const [nameError, setNameError] = useState(false);
+  const [emailError, setEmailError] = useState(false);
+  const [subjectError, setSubjectError] = useState(false);
+  const [messageError, setMessageError] = useState(false);
 
-  const [openSuccess, setOpenSuccess] = React.useState(false);
-  const [openFailure, setOpenFailure] = React.useState(false);
+  // Error wrone variables
+  const [nameWarning, setNameWarning] = useState(false);
+  const [emailWarning, setEmailWarning] = useState(false);
+  const [subjectWarning, setSubjectWarning] = useState(false);
+  const [messageWarning, setMessageWarning] = useState(false);
+
+  // Varialbles to snackbars
+  const [openSuccess, setOpenSuccess] = useState(false);
+  const [openFailure, setOpenFailure] = useState(false);
+
+  const [submit, setSubmit] = useState(false)
 
   const classes = useStyles()
 
-  const handleClick = () => {
-    
-  };
-
+  
   const handleCloseSuccess = (event, reason) => {
     if (reason === 'clickaway') {
       return;
@@ -40,9 +52,62 @@ const ContactForm = () => {
     setOpenFailure(false);
   };
 
-  const handleSubmit = (e) => {
+  const checkEmpty = () => {
+    if(name.length === 0) {
+      setNameError(true)
+      setNameWarning('El campo no puede estar vacío')
+    } else if (name.length > 0 && name.length <= 5) {
+      console.log('length no required')
+      setNameError(true)
+      setNameWarning('Debe haber mas de 5 caracteres')
+      console.log(nameError)
+    } else {
+      setNameError(false)
+      setNameWarning('')
+      console.log(nameError)
+    }
+
+    if (email.length === 0) {
+      setEmailError(true)
+      setEmailWarning('El campo no puede estar vacío')
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      setEmailError(true)
+      setEmailWarning('Correo no valido')
+    } else {
+      setEmailError(false)
+      setEmailWarning('')     
+    }
+
+    if(subject.length === 0) {
+      setSubjectError(true)
+      setSubjectWarning('El campo no puede estar vacío')
+    } else {
+      setSubjectError(false)
+      setSubjectWarning('')
+    }
+
+    if(message.length === 0) {
+      setMessageError(true)
+      setMessageWarning('El campo no puede estar vacío')
+    } else {
+      setMessageError(false)
+      setMessageWarning('')
+    }
+    
+    
+  }
+
+
+  const handleSubmit = e => {
     e.preventDefault()
 
+    setSubmit(true)
+
+    checkEmpty()
+  }
+
+  const sendEmail = () => {
+    console.log('He entrado al metodo sendEmail')
     const templateParams = {
       name: name,
       email: email,
@@ -58,79 +123,18 @@ const ContactForm = () => {
     )
     .then(res => {
       setOpenSuccess(true)
+      onHandleReset()
     })
     .catch(error =>
       setOpenFailure(true)
     )
-
-    onHandleReset()
     
-  }
+  } 
 
   const nameChange = (e) => {
     if(e.target.value.match("^[a-zA-Z ]*$")!=null) {
-      e.preventDefault()
-      setName(e.target.value)
-      console.log(name)
+      setName(e.target.value)      
     }
-  }
-
-  const emailChange = (e) => {
-    
-      e.preventDefault()
-      setEmail(e.target.value)
-      console.log(email)
-    
-  }
-
-  const subjectChange = (e) => {
-    e.preventDefault()
-    setSubject(e.target.value)
-    console.log(subject)    
-  }
-
-  const messageChange = (e) => {
-    e.preventDefault()
-    setMessage(e.target.value)
-    console.log(message)
-  }
-
-  const handleValidation = () => {
-    let fields = this.state.fields;
-    let errors = {};
-    let formIsValid = true;
-
-    //Name
-    if(!fields["name"]){
-       formIsValid = false;
-       errors["name"] = "Cannot be empty";
-    }
-
-    if(typeof fields["name"] !== "undefined"){
-       if(!fields["name"].match(/^[a-zA-Z]+$/)){
-          formIsValid = false;
-          errors["name"] = "Only letters";
-       }        
-    }
-                                                                                                               
-    //Email
-    if(!fields["email"]){
-       formIsValid = false;
-       errors["email"] = "Cannot be empty";
-    }
-
-    if(typeof fields["email"] !== "undefined"){
-       let lastAtPos = fields["email"].lastIndexOf('@');
-       let lastDotPos = fields["email"].lastIndexOf('.');
-
-       if (!(lastAtPos < lastDotPos && lastAtPos > 0 && fields["email"].indexOf('@@') === -1 && lastDotPos > 2 && (fields["email"].length - lastDotPos) > 2)) {
-          formIsValid = false;
-          errors["email"] = "Email is not valid";
-        }
-    }  
-
-    this.setState({errors: errors});
-    return formIsValid;
   }
 
   const onHandleReset = () => {
@@ -140,29 +144,48 @@ const ContactForm = () => {
     setMessage('');
   }
 
+  useEffect(() => {
+
+    
+    if(submit) {
+      if(!nameError && !emailError && !subjectError && !messageError){              
+        sendEmail()
+      }     
+      setSubmit(false) 
+    }
+
+    return () => {
+      
+    };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [submit])
 
   return (
     <Paper className={classes.paper}>
-      <form method='POST' onSubmit={handleSubmit}>
+      <form        
+        onSubmit={handleSubmit}
+      >
         <Typography variant="h4" align='center' className={classes.titleContact}>
           CONSULTA
         </Typography>
         <Typography className={classes.input} variant="body1" gutterBottom>
           Si tienes alguna duda, escribenos!
         </Typography>
-        <TextField name='name' value={name} onChange={nameChange} size='small' className={classes.input} id="outlined-basic" label="Nombre y apellido" variant="outlined" fullWidth/>
-        <TextField name='email' value={email} onChange={emailChange} size='small' className={classes.input} id="outlined-basic" label="Correo electrónico" variant="outlined" fullWidth/>
-        <TextField name='subject' value={subject} onChange={subjectChange} size='small' className={classes.input} id="outlined-basic" label="Asunto" variant="outlined" fullWidth/>
+        <TextField name='name' value={name} onChange={nameChange} error={nameError} size='small' className={classes.input} id="outlined-basic" label="Nombre y apellido" helperText={nameWarning} variant="outlined" fullWidth/>
+        <TextField name='email' value={email} onChange={e => setEmail(e.target.value)} error={emailError} size='small' className={classes.input} id="outlined-basic" label="Correo electrónico" helperText={emailWarning} variant="outlined" fullWidth/>
+        <TextField name='subject' value={subject} onChange={e => setSubject(e.target.value)} error={subjectError} size='small' className={classes.input} id="outlined-basic" label="Asunto" helperText={subjectWarning} variant="outlined" fullWidth/>
         <TextField
-          name='message' 
+          name='message'
           value={message}
-          onChange={messageChange}
-          size='small' 
+          onChange={e => setMessage(e.target.value)}
+          error={messageError}
+          helperText={messageWarning}
+          size='small'
           className={classes.input}
           id="outlined-multiline-static"
           label="Mensaje"
           multiline
-          rows={5}                  
+          rows={5}
           variant="outlined"
           fullWidth
         />
@@ -177,7 +200,7 @@ const ContactForm = () => {
           LIMPIAR
         </Button>
         <Button
-          type='submit'
+          type='submit'         
           variant="outlined"
           size="large"
           color="primary"

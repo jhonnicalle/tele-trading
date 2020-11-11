@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { createRef } from 'react'
 import { Grid, Paper, Typography } from '@material-ui/core'
 import './Guarantee.css'
 import { useStyles } from './GuaranteeStyles'
@@ -7,6 +7,8 @@ import Carousel from 'react-material-ui-carousel'
 
 const Guarantee = () => {
   const classes = useStyles()
+
+  // const ref = createRef()
 
   const items = [
     {
@@ -50,10 +52,12 @@ const Guarantee = () => {
           </Typography>
           <Grid className={classes.card} container>
             <Grid item xs={12}>
-              <Carousel
+              {/* <Carousel
                 className={classes.carousel}
                 animation="fade"
                 interval={15000}
+           
+
               >
                 {
                   items.map( (item, i) => (
@@ -62,7 +66,7 @@ const Guarantee = () => {
                     </Paper>
                   ))
                 }
-              </Carousel>
+              </Carousel> */}
             </Grid>
           </Grid>
         </Grid>

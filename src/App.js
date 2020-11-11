@@ -18,15 +18,14 @@ const location = {
 const App = () => {
   return (
     <MuiThemeProvider theme={THEME}>
-        <div>
-          <Header />
-          <Services />
-          <Values />
-          <Guarantee />
-          <Map location={location} zoomLevel={17} />
-          <ContactUs />
-        </div>
-      
+      <div>
+        <Header />
+        <Services />
+        <Values />
+        <Guarantee />
+        <Map location={location} zoomLevel={17} />
+        <ContactUs />
+      </div>
     </MuiThemeProvider>
     
   );

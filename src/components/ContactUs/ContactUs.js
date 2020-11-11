@@ -3,6 +3,7 @@ import { Container, Grid,  Typography } from '@material-ui/core';
 import './ContactUs.css';
 import { useStyles } from './ContactUsStyles';
 import ContactForm from './ContactForm/ContactForm';
+// import ContactForm from './ContactForm/ContactForm2';
 import ContactDetails from './ContactDetails/ContactDetails';
 
 const ContactUs = () => {
