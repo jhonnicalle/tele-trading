@@ -15,7 +15,7 @@ export const useStyles = makeStyles((theme) => ({
   paper: {
     backgroundColor: '#FFFFFF00',
     textAlign: 'center',
-    height: `calc(100% - ${theme.spacing(2)}px)`,
+    // height: `calc(100% - ${theme.spacing(2)}px)`,
     color: theme.palette.text.primary,
   },
   carousel: {

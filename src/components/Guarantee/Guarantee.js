@@ -8,7 +8,8 @@ import Carousel from 'react-material-ui-carousel'
 const Guarantee = () => {
   const classes = useStyles()
 
-  // const ref = createRef()
+  const wraper = createRef()
+  
 
   const items = [
     {
@@ -52,21 +53,19 @@ const Guarantee = () => {
           </Typography>
           <Grid className={classes.card} container>
             <Grid item xs={12}>
-              {/* <Carousel
+              <Carousel
                 className={classes.carousel}
                 animation="fade"
                 interval={15000}
-           
-
               >
                 {
                   items.map( (item, i) => (
                     <Paper elevation={0} className={classes.paper} key={i}>
-                      <Typography className={classes.paragraph}>{item.description}</Typography>
+                      <Typography ref={wraper} className={classes.paragraph}>{item.description}</Typography>
                     </Paper>
                   ))
                 }
-              </Carousel> */}
+              </Carousel>
             </Grid>
           </Grid>
         </Grid>

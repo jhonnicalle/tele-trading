@@ -1,6 +1,6 @@
 import { Button, Paper, Snackbar, TextField, Typography } from '@material-ui/core'
 import { Clear, Send } from '@material-ui/icons'
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useStyles } from '../ContactUsStyles'
 import emailjs from 'emailjs-com';
 import MuiAlert from '@material-ui/lab/Alert';
