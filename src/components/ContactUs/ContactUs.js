@@ -9,7 +9,7 @@ import ContactDetails from './ContactDetails/ContactDetails';
 const ContactUs = () => {
   const classes = useStyles()
   return (
-    <div className='background-screen-contactus'>
+    <div className='background-screen-contactus' id="contactus">
       <div className='transparent-backgrund-contactus'>
         <Container>
           <Typography variant="h4" align='center' className={classes.titleContact}>
