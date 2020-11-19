@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/tele-trading/precache-manifest.1234c82eae8f963db54c5fe954161106.js"
+  "/tele-trading/precache-manifest.81d3fbedd662260d302ad6eaf8b51973.js"
 );
 
 self.addEventListener('message', (event) => {
