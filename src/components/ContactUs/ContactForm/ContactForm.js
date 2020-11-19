@@ -10,7 +10,7 @@ const Alert = (props) => {
 }
 
 const ContactForm = () => {
-  
+
   // Variables to form
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -37,7 +37,7 @@ const ContactForm = () => {
 
   const classes = useStyles()
 
-  
+
   const handleCloseSuccess = (event, reason) => {
     if (reason === 'clickaway') {
       return;
@@ -75,7 +75,7 @@ const ContactForm = () => {
       setEmailWarning('Correo no valido')
     } else {
       setEmailError(false)
-      setEmailWarning('')     
+      setEmailWarning('')
     }
 
     if(subject.length === 0) {
@@ -93,8 +93,8 @@ const ContactForm = () => {
       setMessageError(false)
       setMessageWarning('')
     }
-    
-    
+
+
   }
 
 
@@ -128,12 +128,12 @@ const ContactForm = () => {
     .catch(error =>
       setOpenFailure(true)
     )
-    
-  } 
+
+  }
 
   const nameChange = (e) => {
     if(e.target.value.match("^[a-zA-Z ]*$")!=null) {
-      setName(e.target.value)      
+      setName(e.target.value)
     }
   }
 
@@ -145,24 +145,18 @@ const ContactForm = () => {
   }
 
   useEffect(() => {
-
-    
     if(submit) {
-      if(!nameError && !emailError && !subjectError && !messageError){              
+      if(!nameError && !emailError && !subjectError && !messageError){
         sendEmail()
-      }     
-      setSubmit(false) 
+      }
+      setSubmit(false)
     }
-
-    return () => {
-      
-    };
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [submit])
 
   return (
     <Paper className={classes.paper}>
-      <form        
+      <form
         onSubmit={handleSubmit}
       >
         <Typography variant="h4" align='center' className={classes.titleContact}>
@@ -200,7 +194,7 @@ const ContactForm = () => {
           LIMPIAR
         </Button>
         <Button
-          type='submit'         
+          type='submit'
           variant="outlined"
           size="large"
           color="primary"

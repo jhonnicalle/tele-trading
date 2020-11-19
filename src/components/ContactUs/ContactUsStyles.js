@@ -2,7 +2,7 @@ const { makeStyles } = require("@material-ui/core");
 
 export const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,    
+    flexGrow: 1,
   },
   titleContact: {
     padding: theme.spacing(2),
@@ -12,20 +12,33 @@ export const useStyles = makeStyles((theme) => ({
     backgroundColor: '#FFFFFFAA',
     padding: theme.spacing(2),
     textAlign: 'center',
-    height: `calc(100% - ${theme.spacing(2)}px)`,
+    height: '100%',
     color: theme.palette.text.primary,
+    [theme.breakpoints.down('xs')]: {
+      height: 'auto'
+    },
+  },
+  // grid: {
+  //   [theme.breakpoints.down('xs')]: {
+  //     padding: '20px 0px'
+  //   },
+  // },
+  gridItem: {
+    [theme.breakpoints.down('xs')]: {
+      margin: '5px',
+    },
   },
   input: {
     marginBottom: theme.spacing(2),
   },
-  button: {    
+  button: {
     borderRadius: '20px',
-    margin: '0 5px'
+    margin: theme.spacing(1)
   },
-  snackbar: {
-    width: '100%',
-    '& > * + *': {
-      marginTop: theme.spacing(2),
-    },
-  },
+  // snackbar: {
+  //   width: '100%',
+  //   '& > * + *': {
+  //     marginTop: theme.spacing(2),
+  //   },
+  // },
 }));

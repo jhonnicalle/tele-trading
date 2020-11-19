@@ -10,7 +10,6 @@ const Guarantee = () => {
 
   const wraper = createRef()
   
-
   const items = [
     {
       description: `Como la industria es un campo extremadamente sensible, cuyos estándares de seguridad y
@@ -27,7 +26,7 @@ const Guarantee = () => {
     {
       description: `En este estricto y continuo proceso que abarca la búsqueda del producto adecuado, el
       fabricante idóneo, nuestra empresa está comprometida y exige a sus proveedores que todos
-      sus productos cumplan con los estándares de calidad exigidos para la QUE, y que sean
+      sus productos cumplan con los estándares de calidad exigidos, y que sean
       homologables en cada País de destino. Se realizan las pruebas, se analiza todo el proceso para
       que nuestro cliente final sea empresa o particular se le pueda asegurar la calidad y la seguridad
       del producto.`

@@ -15,11 +15,11 @@ const ContactUs = () => {
           <Typography variant="h4" align='center' className={classes.titleContact}>
             CONTACTANOS
           </Typography>
-          <Grid container alignItems="stretch" spacing={3}>
-            <Grid item xs={12} sm={6} >
+          <Grid container className={classes.grid} alignItems="stretch" spacing={3}>
+            <Grid item className={classes.gridItem} xs={12} sm={6} >
               <ContactDetails />
             </Grid>
-            <Grid item xs={12} sm={6}>              
+            <Grid item className={classes.gridItem} xs={12} sm={6}>              
               <ContactForm />              
             </Grid>
           </Grid>
