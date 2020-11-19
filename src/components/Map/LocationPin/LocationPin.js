@@ -1,12 +1,16 @@
 import React from 'react'
-import { Icon } from '@iconify/react'
-import locationIcon from '@iconify/icons-mdi/map-marker'
+// import { Icon } from '@iconify/react'
+// import locationIcon from '@iconify/icons-mdi/map-marker'
 import '../Map.css'
 
-const LocationPin = ({ text }) => (
-  <div className="pin">
-    <Icon icon={locationIcon} className="pin-icon" />
-    <p className="pin-text">{text}</p>
+const LocationPin = ({ text, color }) => (
+  <div>
+    <div
+      className="pin bounce"
+      style={{ backgroundColor: color, cursor: 'pointer' }}
+      title={text}
+    />
+    <div className="pulse" />
   </div>
 )
 

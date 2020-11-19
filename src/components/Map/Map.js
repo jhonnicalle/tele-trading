@@ -9,7 +9,6 @@ const Map = ({location, zoomLevel}) => {
     <div style={{ height: '100vh', width: '100%' }} className="map">
       <Container>
         <h2 className="map-h2">Conoce donde estamos ubicados</h2>
-
         <div className="google-map">
           <GoogleMapReact
             bootstrapURLKeys={{ key: 'AIzaSyCeo4KCNtlvV2Wo04x353GFFyg0g0HPDio' }}
@@ -20,6 +19,7 @@ const Map = ({location, zoomLevel}) => {
               lat={location.lat}
               lng={location.lng}
               text={location.address}
+              color='blue'
             />
           </GoogleMapReact>
         </div>
