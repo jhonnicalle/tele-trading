@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/tele-trading/static/css/main.33fd2510.chunk.css",
-    "main.js": "/tele-trading/static/js/main.2f13f5ad.chunk.js",
-    "main.js.map": "/tele-trading/static/js/main.2f13f5ad.chunk.js.map",
+    "main.js": "/tele-trading/static/js/main.ceb7339b.chunk.js",
+    "main.js.map": "/tele-trading/static/js/main.ceb7339b.chunk.js.map",
     "runtime-main.js": "/tele-trading/static/js/runtime-main.b1381e78.js",
     "runtime-main.js.map": "/tele-trading/static/js/runtime-main.b1381e78.js.map",
-    "static/js/2.a39b0895.chunk.js": "/tele-trading/static/js/2.a39b0895.chunk.js",
-    "static/js/2.a39b0895.chunk.js.map": "/tele-trading/static/js/2.a39b0895.chunk.js.map",
+    "static/js/2.f6f8de6e.chunk.js": "/tele-trading/static/js/2.f6f8de6e.chunk.js",
+    "static/js/2.f6f8de6e.chunk.js.map": "/tele-trading/static/js/2.f6f8de6e.chunk.js.map",
     "index.html": "/tele-trading/index.html",
-    "precache-manifest.dda744ab5ec848840e9bdfa347acacb9.js": "/tele-trading/precache-manifest.dda744ab5ec848840e9bdfa347acacb9.js",
+    "precache-manifest.cc1dd61990f74e00991ab8fca8cfbc31.js": "/tele-trading/precache-manifest.cc1dd61990f74e00991ab8fca8cfbc31.js",
     "service-worker.js": "/tele-trading/service-worker.js",
     "static/css/main.33fd2510.chunk.css.map": "/tele-trading/static/css/main.33fd2510.chunk.css.map",
-    "static/js/2.a39b0895.chunk.js.LICENSE.txt": "/tele-trading/static/js/2.a39b0895.chunk.js.LICENSE.txt",
+    "static/js/2.f6f8de6e.chunk.js.LICENSE.txt": "/tele-trading/static/js/2.f6f8de6e.chunk.js.LICENSE.txt",
     "static/media/ContactUs.css": "/tele-trading/static/media/CONTACT US BACKGROUND.55195ee2.jpg",
     "static/media/Header.css": "/tele-trading/static/media/HEADER BACKGROUND.b12b3430.jpg",
     "static/media/SERVICES IMAGE.jpg": "/tele-trading/static/media/SERVICES IMAGE.5c626240.jpg",
@@ -20,8 +20,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b1381e78.js",
-    "static/js/2.a39b0895.chunk.js",
+    "static/js/2.f6f8de6e.chunk.js",
     "static/css/main.33fd2510.chunk.css",
-    "static/js/main.2f13f5ad.chunk.js"
+    "static/js/main.ceb7339b.chunk.js"
   ]
 }
