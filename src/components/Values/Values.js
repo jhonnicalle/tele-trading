@@ -1,19 +1,20 @@
 import {
-  Button, 
-  Grid, 
-  MobileStepper, 
-  Paper, 
-  Typography, 
-  useTheme 
+  Button,
+  Grid,
+  MobileStepper,
+  Paper,
+  Typography,
+  useTheme
 } from '@material-ui/core';
-import { 
+import {
   KeyboardArrowLeft,
-  KeyboardArrowRight 
+  KeyboardArrowRight
 } from '@material-ui/icons';
 import React from 'react';
 import { useStyles } from './ValuesStyles';
 import './Values.css';
 import image from '../../images/VALUES IMAGE.jpg'
+import Carousel from 'react-material-ui-carousel';
 
 // const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -21,52 +22,52 @@ const value = [
   {
     title: 'PROFESIONALIDAD',
     content: `Somos y vivimos nuestro negocio. Creamos lazos con compañías basadas
-     en el respeto, la honestidad y la profesionalidad de quienes han tenido 
+     en el respeto, la honestidad y la profesionalidad de quienes han tenido
      la iniciativa de crear esta empresa.`
   },
   {
     title: 'RESPONSABILIDAD',
     content: `Tenemos la firme convicción que con nuestro trabajo,
-    incentivamos y aceleramos, la construcción de lazos comerciales y personales, sostenidos 
+    incentivamos y aceleramos, la construcción de lazos comerciales y personales, sostenidos
     local y globalmente, para nosotros, nuestros clientes y
     todas las personas que ayudamos incentivando su actividad profesional en el exterior.`,
-    
+
   },
   {
     title: 'REINVENCIÓN',
     content: `Crecemos con cada oportunidad, La agilidad con la que respondemos a los desafíos nos
     permite explorar nuevos caminos y ambicionar nuevas oportunidades todos los días. Creemos
-    en la autodisciplina y en las capacidades de las personas que desean crear, innovar, comerciar 
+    en la autodisciplina y en las capacidades de las personas que desean crear, innovar, comerciar
     y emprender.`,
   },
   {
     title: 'INSPIRACIÓN',
-    content: `Avanzamos y progresamos juntos, tenemos determinación, 
-    intensión y la dirección adecuada en la búsqueda de nuevos paradigmas, 
+    content: `Avanzamos y progresamos juntos, tenemos determinación,
+    intensión y la dirección adecuada en la búsqueda de nuevos paradigmas,
     instando a todos a que nos acompañen, caminando a nuestro lado.`,
   },
   {
     title: 'CONOCIMIENTO',
     content: `Sabemos lo que hacemos, Seguimos profundizando en conocimiento de toda la cadena de
-    valor para impulsar la evolución y la diferenciación en nuestros procesos y servicios.`,    
+    valor para impulsar la evolución y la diferenciación en nuestros procesos y servicios.`,
   },
 ];
 
 const Values = () => {
   const classes = useStyles()
-  const theme = useTheme();
-  const [activeStep, setActiveStep] = React.useState(0);
-  const maxSteps = value.length;
+  // const theme = useTheme();
+  // const [activeStep, setActiveStep] = React.useState(0);
+  // const maxSteps = value.length;
 
-  const handleNext = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
-  };
+  // const handleNext = () => {
+  //   setActiveStep((prevActiveStep) => prevActiveStep + 1);
+  // };
 
-  const handleBack = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep - 1);
-  };
+  // const handleBack = () => {
+  //   setActiveStep((prevActiveStep) => prevActiveStep - 1);
+  // };
 
- 
+
 
   return (
     <div className="background-screen-values">
@@ -76,31 +77,20 @@ const Values = () => {
             VALORES
           </Typography>
           <div className={classes.root}>
-            <Paper square elevation={0} className={classes.titleCard}>
-              <Typography align='center' variant='h5'>{value[activeStep].title}</Typography>
-            </Paper>         
-            <Paper square elevation={0} className={classes.header}>
-              <Typography paragraph>{value[activeStep].content}</Typography>
-            </Paper>            
-            <MobileStepper
-              variant="progress"
-              steps={maxSteps}
-              position="static"
-              activeStep={activeStep}
-              className={classes.root}
-              nextButton={
-                <Button size="small" onClick={handleNext} disabled={activeStep === maxSteps - 1}>
-                  {/* Siguiente */}
-                  {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
-                </Button>
-              }
-              backButton={
-                <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
-                  {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
-                  {/* Anterior */}
-                </Button>
-              }
-            />
+            <Carousel
+                className={classes.carousel}
+                animation="fade"
+                interval={15000}
+              >
+                {
+                  value.map( (item, i) => (
+                    <Paper elevation={0} className={classes.paper} key={i}>
+                      <Typography align='center' variant='h5' className={classes.paragraph}>{item.title}</Typography>
+                      <Typography className={classes.paragraph}>{item.content}</Typography>
+                    </Paper>
+                  ))
+                }
+              </Carousel>
           </div>
         </Grid>
         <Grid className='image-values' item xs={true} sm={true} md={6} lg={6}>

@@ -55,7 +55,7 @@ const Guarantee = () => {
               <Carousel
                 className={classes.carousel}
                 animation="fade"
-                interval={300000}
+                interval={15000}
               >
                 {
                   items.map( (item, i) => (
