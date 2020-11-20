@@ -11,7 +11,7 @@ const Map = ({location, zoomLevel}) => {
   return (
     <div style={{ width: '100%' }} className="map">
       <Container>
-        <Typography variant='h4' align='center' className={classes.titleContact}>CONOCE DÓNDE ESTAMOS UBICADOS</Typography>
+        <Typography variant='h4' align='center' className={classes.titleContact}>CONOZCA DÓNDE ESTAMOS UBICADOS</Typography>
         <div className={classes.map}>
           <GoogleMapReact            
             bootstrapURLKeys={{ key: 'AIzaSyCeo4KCNtlvV2Wo04x353GFFyg0g0HPDio' }}
