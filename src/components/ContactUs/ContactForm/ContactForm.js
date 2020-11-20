@@ -163,7 +163,7 @@ const ContactForm = () => {
           CONSULTA
         </Typography>
         <Typography className={classes.input} variant="body1" gutterBottom>
-          Si tienes alguna duda, escribenos!
+          Si tiene alguna duda ¡no dude en escribirnos!
         </Typography>
         <TextField name='name' value={name} onChange={nameChange} error={nameError} size='small' className={classes.input} id="outlined-basic" label="Nombre y apellido" helperText={nameWarning} variant="outlined" fullWidth/>
         <TextField name='email' value={email} onChange={e => setEmail(e.target.value)} error={emailError} size='small' className={classes.input} id="outlined-basic" label="Correo electrónico" helperText={emailWarning} variant="outlined" fullWidth/>
@@ -185,7 +185,7 @@ const ContactForm = () => {
         />
         <Button
           onClick={onHandleReset}
-          variant="outlined"
+          variant="contained"
           size="large"
           color="secondary"
           className={classes.button}
@@ -195,7 +195,7 @@ const ContactForm = () => {
         </Button>
         <Button
           type='submit'
-          variant="outlined"
+          variant="contained"
           size="large"
           color="primary"
           className={classes.button}

@@ -18,7 +18,7 @@ const Header = () => {
               <div className="home-info">
                 <h1 className="title">TELE-TRADING</h1>
                 <p>
-                  Somos tu aliado de negocios en España, Portugal y China Contamos con la experiencia,
+                  Somos su aliado de negocios en España, Portugal y China Contamos con la experiencia,
                   acompañando a nuestros clientes en el proceso de optimización de manufacturación, compras
                   y logísticas en La Península Ibérica, contamos con socios estratégicos en China, contribuyendo
                   en el desarrollo de productos de calidad, precios competitivos, valores agregados y novedosas

@@ -6,26 +6,23 @@ export const useStyles = makeStyles((theme) => ({
   },
   titleContact: {
     padding: theme.spacing(2),
-    color: "#FFFFF1"
+    color: theme.palette.text.primary,
   },
   paper: {
     backgroundColor: '#FFFFFFAA',
     padding: theme.spacing(2),
     textAlign: 'center',
-    height: '100%',
+    height: `calc(100% - ${theme.spacing(4)}px)`,
     color: theme.palette.text.primary,
+  },
+  grid: {
     [theme.breakpoints.down('xs')]: {
-      height: 'auto'
+      padding: '20px 0px'
     },
   },
-  // grid: {
-  //   [theme.breakpoints.down('xs')]: {
-  //     padding: '20px 0px'
-  //   },
-  // },
   gridItem: {
     [theme.breakpoints.down('xs')]: {
-      margin: '5px',
+      margin: '0 auto',
     },
   },
   input: {

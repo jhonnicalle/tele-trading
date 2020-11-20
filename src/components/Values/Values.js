@@ -26,25 +26,24 @@ const value = [
   },
   {
     title: 'RESPONSABILIDAD',
-    content: `Estamos concienciados, con orgullo, tenemos la convicción firme que con nuestro trabajo
-    incentivamos y aceleramos, la construcción de lazos comerciales y personales que a futuro
-    serán sostenidos y sostenibles, local y globalmente. Para nosotros, para nuestros clientes y
-    para todas las personas a las cuales ayudamos a incentivar su actividad profesional en el
-    exterior.`,
+    content: `Tenemos la firme convicción que con nuestro trabajo,
+    incentivamos y aceleramos, la construcción de lazos comerciales y personales, sostenidos 
+    local y globalmente, para nosotros, nuestros clientes y
+    todas las personas que ayudamos incentivando su actividad profesional en el exterior.`,
+    
   },
   {
     title: 'REINVENCIÓN',
     content: `Crecemos con cada oportunidad, La agilidad con la que respondemos a los desafíos nos
     permite explorar nuevos caminos y ambicionar nuevas oportunidades todos los días. Creemos
-    en la autodisciplina y en las capacidades de las personas que desean crear, innovar, comerciar
-    emprender. `,
+    en la autodisciplina y en las capacidades de las personas que desean crear, innovar, comerciar 
+    y emprender.`,
   },
   {
     title: 'INSPIRACIÓN',
-    content: `Avanzamos juntos, Progresamos juntos , tenemos la determinación que si tenemos la
-    intensión y la dirección adecuada en la búsqueda de nuevos paradigmas con muchas
-    preguntas y algunas respuestas, instando a todos a que nos acompañen, caminando a nuestro
-    lado.`,
+    content: `Avanzamos y progresamos juntos, tenemos determinación, 
+    intensión y la dirección adecuada en la búsqueda de nuevos paradigmas, 
+    instando a todos a que nos acompañen, caminando a nuestro lado.`,
   },
   {
     title: 'CONOCIMIENTO',

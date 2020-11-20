@@ -18,7 +18,7 @@ const Guarantee = () => {
       productor.`
     },
     {
-      description: `Nuestros clientes tienen la seguridad de que cada uno de nuestros fabricantes tiene el
+      description: `Nuestros clientes tendrán la seguridad de que cada uno de nuestros fabricantes posee el
       compromiso de garantizar el mejor producto. Por ello, el proceso de control de calidad
       comienza justamente en la cuidadosa selección del productor, cuyos estándares de calidad
       deben ser más exigentes que los de la media.`
@@ -26,16 +26,16 @@ const Guarantee = () => {
     {
       description: `En este estricto y continuo proceso que abarca la búsqueda del producto adecuado, el
       fabricante idóneo, nuestra empresa está comprometida y exige a sus proveedores que todos
-      sus productos cumplan con los estándares de calidad exigidos, y que sean
+      sus productos cumplan con los estándares de calidad exigidos y que sean
       homologables en cada País de destino. Se realizan las pruebas, se analiza todo el proceso para
       que nuestro cliente final sea empresa o particular se le pueda asegurar la calidad y la seguridad
       del producto.`
     },
     {
-      description: `Podemos ofrecer a nuestros clientes productos prácticamente de toda Europa,
-      Especializándonos en los países de la Península Ibérica, España y Portugal, prestando el
-      servicio en todo el proceso de internacionalización. Podemos negociar prácticamente en todos
-      los términos Incoterm y prestar el asesoramiento necesario para que el producto esté en
+      description: `Podemos ofrecer a nuestros clientes productos prácticamente en toda Europa,
+      especializándonos en los países de la Península Ibérica, España y Portugal, prestando el
+      servicio en todo el proceso de internacionalización. Negociamos en todos
+      los términos Incoterm y prestamos el asesoramiento necesario para que el producto esté a
       disposición del cliente.`
     }
   ]
@@ -55,7 +55,7 @@ const Guarantee = () => {
               <Carousel
                 className={classes.carousel}
                 animation="fade"
-                interval={15000}
+                interval={300000}
               >
                 {
                   items.map( (item, i) => (

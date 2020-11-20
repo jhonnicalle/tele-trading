@@ -1,6 +1,6 @@
 .background-screen-header {
   z-index: -999;
-  background: url('../../images/HEADER\ BACKGROUND.jpg') no-repeat center center fixed;
+  background: url('../../images/HEADER\ BACKGROUND.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
