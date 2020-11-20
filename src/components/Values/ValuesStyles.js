@@ -21,6 +21,9 @@ export const useStyles = makeStyles((theme) => ({
     border: '1px solid black',
     borderRadius: 10
   },
+  paragraph: {
+    padding: theme.spacing(2),
+  },
   header: {
     // display: 'flex',
     alignItems: 'center',

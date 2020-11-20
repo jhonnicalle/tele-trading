@@ -10,7 +10,6 @@ export const useStyles = makeStyles((theme) => ({
   },
   paragraph: {
     padding: theme.spacing(2),
-    
   },
   paper: {
     backgroundColor: '#FFFFFF00',

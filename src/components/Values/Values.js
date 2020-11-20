@@ -1,15 +1,11 @@
 import {
-  Button,
+  
   Grid,
-  MobileStepper,
+  
   Paper,
   Typography,
-  useTheme
+  
 } from '@material-ui/core';
-import {
-  KeyboardArrowLeft,
-  KeyboardArrowRight
-} from '@material-ui/icons';
 import React from 'react';
 import { useStyles } from './ValuesStyles';
 import './Values.css';
