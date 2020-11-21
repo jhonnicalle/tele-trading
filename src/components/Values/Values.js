@@ -1,10 +1,7 @@
 import {
-  
   Grid,
-  
   Paper,
   Typography,
-  
 } from '@material-ui/core';
 import React from 'react';
 import { useStyles } from './ValuesStyles';
@@ -12,14 +9,12 @@ import './Values.css';
 import image from '../../images/VALUES IMAGE.jpg'
 import Carousel from 'react-material-ui-carousel';
 
-// const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
-
 const value = [
   {
     title: 'PROFESIONALIDAD',
     content: `Somos y vivimos nuestro negocio. Creamos lazos con compañías basadas
-     en el respeto, la honestidad y la profesionalidad de quienes han tenido
-     la iniciativa de crear esta empresa.`
+    en el respeto, la honestidad y la profesionalidad de quienes han tenido
+    la iniciativa de crear esta empresa.`
   },
   {
     title: 'RESPONSABILIDAD',
@@ -27,7 +22,6 @@ const value = [
     incentivamos y aceleramos, la construcción de lazos comerciales y personales, sostenidos
     local y globalmente, para nosotros, nuestros clientes y
     todas las personas que ayudamos incentivando su actividad profesional en el exterior.`,
-
   },
   {
     title: 'REINVENCIÓN',
@@ -62,8 +56,6 @@ const Values = () => {
   // const handleBack = () => {
   //   setActiveStep((prevActiveStep) => prevActiveStep - 1);
   // };
-
-
 
   return (
     <div className="background-screen-values">

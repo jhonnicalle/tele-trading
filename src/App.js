@@ -1,7 +1,8 @@
 import { MuiThemeProvider } from '@material-ui/core';
 import React from 'react';
 import { THEME } from './AppStyles';
-import Navbar from './components/Navbar/Navbar';
+// import Navbar from './components/Navbar/Navbar';
+import Navbar2 from './components/Navbar/Navbar2';
 // import ContactUs from './components/ContactUs/ContactUs';
 // import Guarantee from './components/Guarantee/Guarantee';
 // import Header from './components/Header/Header';
@@ -13,7 +14,7 @@ const App = () => {
   return (
     <MuiThemeProvider theme={THEME}>
       <div>
-        <Navbar />
+        <Navbar2 />
         {/* <Header id="#header" />
         <Services />
         <Values />
