@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/tele-trading/static/css/main.33fd2510.chunk.css",
-    "main.js": "/tele-trading/static/js/main.ceb7339b.chunk.js",
-    "main.js.map": "/tele-trading/static/js/main.ceb7339b.chunk.js.map",
+    "main.css": "/tele-trading/static/css/main.53aabe37.chunk.css",
+    "main.js": "/tele-trading/static/js/main.9471fef5.chunk.js",
+    "main.js.map": "/tele-trading/static/js/main.9471fef5.chunk.js.map",
     "runtime-main.js": "/tele-trading/static/js/runtime-main.b1381e78.js",
     "runtime-main.js.map": "/tele-trading/static/js/runtime-main.b1381e78.js.map",
-    "static/js/2.f6f8de6e.chunk.js": "/tele-trading/static/js/2.f6f8de6e.chunk.js",
-    "static/js/2.f6f8de6e.chunk.js.map": "/tele-trading/static/js/2.f6f8de6e.chunk.js.map",
+    "static/js/2.4c4e9754.chunk.js": "/tele-trading/static/js/2.4c4e9754.chunk.js",
+    "static/js/2.4c4e9754.chunk.js.map": "/tele-trading/static/js/2.4c4e9754.chunk.js.map",
     "index.html": "/tele-trading/index.html",
-    "precache-manifest.cc1dd61990f74e00991ab8fca8cfbc31.js": "/tele-trading/precache-manifest.cc1dd61990f74e00991ab8fca8cfbc31.js",
+    "precache-manifest.f194d40396941735ed1369601e7b3623.js": "/tele-trading/precache-manifest.f194d40396941735ed1369601e7b3623.js",
     "service-worker.js": "/tele-trading/service-worker.js",
-    "static/css/main.33fd2510.chunk.css.map": "/tele-trading/static/css/main.33fd2510.chunk.css.map",
-    "static/js/2.f6f8de6e.chunk.js.LICENSE.txt": "/tele-trading/static/js/2.f6f8de6e.chunk.js.LICENSE.txt",
+    "static/css/main.53aabe37.chunk.css.map": "/tele-trading/static/css/main.53aabe37.chunk.css.map",
+    "static/js/2.4c4e9754.chunk.js.LICENSE.txt": "/tele-trading/static/js/2.4c4e9754.chunk.js.LICENSE.txt",
     "static/media/ContactUs.css": "/tele-trading/static/media/CONTACT US BACKGROUND.55195ee2.jpg",
     "static/media/Header.css": "/tele-trading/static/media/HEADER BACKGROUND.b12b3430.jpg",
     "static/media/SERVICES IMAGE.jpg": "/tele-trading/static/media/SERVICES IMAGE.5c626240.jpg",
     "static/media/VALUES IMAGE.jpg": "/tele-trading/static/media/VALUES IMAGE.d9a20dbb.jpg",
-    "static/media/logo T-01.png": "/tele-trading/static/media/logo T-01.74e359ae.png"
+    "static/media/logo T-01.png": "/tele-trading/static/media/logo T-01.74e359ae.png",
+    "static/media/logo-navbar.png": "/tele-trading/static/media/logo-navbar.e7d551fa.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b1381e78.js",
-    "static/js/2.f6f8de6e.chunk.js",
-    "static/css/main.33fd2510.chunk.css",
-    "static/js/main.ceb7339b.chunk.js"
+    "static/js/2.4c4e9754.chunk.js",
+    "static/css/main.53aabe37.chunk.css",
+    "static/js/main.9471fef5.chunk.js"
   ]
 }
