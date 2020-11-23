@@ -23,7 +23,6 @@ const App = () => {
         <ContactUs id="contactus" /> */}
       </div>      
     </MuiThemeProvider>
-    
   );
 }
 
