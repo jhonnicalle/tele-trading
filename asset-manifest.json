@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/tele-trading/static/css/main.53aabe37.chunk.css",
-    "main.js": "/tele-trading/static/js/main.9471fef5.chunk.js",
-    "main.js.map": "/tele-trading/static/js/main.9471fef5.chunk.js.map",
+    "main.css": "/tele-trading/static/css/main.ea011f49.chunk.css",
+    "main.js": "/tele-trading/static/js/main.8e85e157.chunk.js",
+    "main.js.map": "/tele-trading/static/js/main.8e85e157.chunk.js.map",
     "runtime-main.js": "/tele-trading/static/js/runtime-main.b1381e78.js",
     "runtime-main.js.map": "/tele-trading/static/js/runtime-main.b1381e78.js.map",
     "static/js/2.4c4e9754.chunk.js": "/tele-trading/static/js/2.4c4e9754.chunk.js",
     "static/js/2.4c4e9754.chunk.js.map": "/tele-trading/static/js/2.4c4e9754.chunk.js.map",
     "index.html": "/tele-trading/index.html",
-    "precache-manifest.f194d40396941735ed1369601e7b3623.js": "/tele-trading/precache-manifest.f194d40396941735ed1369601e7b3623.js",
+    "precache-manifest.7e4445ff5467fdd20b1d7e9019ff0cac.js": "/tele-trading/precache-manifest.7e4445ff5467fdd20b1d7e9019ff0cac.js",
     "service-worker.js": "/tele-trading/service-worker.js",
-    "static/css/main.53aabe37.chunk.css.map": "/tele-trading/static/css/main.53aabe37.chunk.css.map",
+    "static/css/main.ea011f49.chunk.css.map": "/tele-trading/static/css/main.ea011f49.chunk.css.map",
     "static/js/2.4c4e9754.chunk.js.LICENSE.txt": "/tele-trading/static/js/2.4c4e9754.chunk.js.LICENSE.txt",
     "static/media/ContactUs.css": "/tele-trading/static/media/CONTACT US BACKGROUND.55195ee2.jpg",
     "static/media/Header.css": "/tele-trading/static/media/HEADER BACKGROUND.b12b3430.jpg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.b1381e78.js",
     "static/js/2.4c4e9754.chunk.js",
-    "static/css/main.53aabe37.chunk.css",
-    "static/js/main.9471fef5.chunk.js"
+    "static/css/main.ea011f49.chunk.css",
+    "static/js/main.8e85e157.chunk.js"
   ]
 }
