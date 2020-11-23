@@ -27,7 +27,7 @@ const Navbar2 = () => {
   const widthScreen = window.innerWidth;
 
   useEffect(() => {
-    if (clicked) document.body.style.overflow = 'hidden';
+    if (clicked && widthScreen <= 900) document.body.style.overflow = 'hidden';
     return () => {
       document.body.style.overflow = 'unset';
     }

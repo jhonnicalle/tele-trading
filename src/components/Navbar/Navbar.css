@@ -78,11 +78,6 @@
     z-index: 6;
   }
 
-  body.nav-menu.active {
-    position: fixed;
-    overflow: hidden;
-  }
-
   .nav-links {
     text-align: center;
     padding: 1rem 0;
