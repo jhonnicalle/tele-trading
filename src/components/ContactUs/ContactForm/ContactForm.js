@@ -10,7 +10,6 @@ const Alert = (props) => {
 }
 
 const ContactForm = () => {
-
   // Variables to form
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -37,7 +36,6 @@ const ContactForm = () => {
 
   const classes = useStyles()
 
-
   const handleCloseSuccess = (event, reason) => {
     if (reason === 'clickaway') {
       return;
@@ -57,14 +55,11 @@ const ContactForm = () => {
       setNameError(true)
       setNameWarning('El campo no puede estar vacío')
     } else if (name.length > 0 && name.length <= 5) {
-      console.log('length no required')
       setNameError(true)
       setNameWarning('Debe haber mas de 5 caracteres')
-      console.log(nameError)
     } else {
       setNameError(false)
       setNameWarning('')
-      console.log(nameError)
     }
 
     if (email.length === 0) {
@@ -93,10 +88,7 @@ const ContactForm = () => {
       setMessageError(false)
       setMessageWarning('')
     }
-
-
   }
-
 
   const handleSubmit = e => {
     e.preventDefault()
@@ -107,7 +99,6 @@ const ContactForm = () => {
   }
 
   const sendEmail = () => {
-    console.log('He entrado al metodo sendEmail')
     const templateParams = {
       name: name,
       email: email,
@@ -128,7 +119,6 @@ const ContactForm = () => {
     .catch(error =>
       setOpenFailure(true)
     )
-
   }
 
   const nameChange = (e) => {
@@ -143,6 +133,17 @@ const ContactForm = () => {
     setSubject('');
     setMessage('');
   }
+
+  // Comentario importante
+
+  // Este formulario se me hizo en particular un poco complicado validar y enviar la peticion debido a que
+  // realizaba la solicitud cuando hacia click para enviar el formulario, pero los datos no se actualizaban
+  // en el momento debido a que en el metodo handleSubmit() yo hacia la evaluación de los campos 
+  // e inmediatamente hacia la evaluación de los mismos campos para ver si hacía la solicitud, pero lo que 
+  // sucedía era que con el useState, a la hora de hacer la actualizacion de la variable, el metodo es asincrono
+  // por lo que se actualizaban cuando se volvia a actualizar el componente, por lo que tuve que hacer primero la 
+  // actualización de datos cuando enviaba el formulario y luego con useEffect() evaluaba y enviaba la solicitud en dado caso de 
+  // que los campos esten llenos de la manera correcta.
 
   useEffect(() => {
     if(submit) {
