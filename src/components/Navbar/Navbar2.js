@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, Element } from 'react-scroll'
 import Header from '../Header/Header';
-import Services from '../Services/Services';
+// import Services from '../Services/Services';
 import Values from '../Values/Values';
 import Guarantee from '../Guarantee/Guarantee';
 import Map from '../Map/Map';
@@ -12,6 +12,7 @@ import logo from '../../images/logo-navbar.png'
 
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 import CloseRoundedIcon from '@material-ui/icons/CloseRounded';
+import Services2 from '../Services/Services2';
 
 
 const location = {
@@ -45,10 +46,10 @@ const Navbar2 = () => {
         <ul className={clicked ? 'nav-menu active' : 'nav-menu'} >
           {MenuItems.map((item, index) => (
             <Link key={index} activeClass="active" to={item.to} spy={true} smooth={true} offset={widthScreen <= 900 ? -47 : -77} duration={500}>
-              <li >
-                <a className={item.cName} href='' onClick={() => setCliked(!clicked)}>
+              <li className={item.cName} onClick={() => setCliked(!clicked)}>
+                {/* <a className={item.cName} href='' onClick={() => setCliked(!clicked)}> */}
                   {item.title}
-                </a>
+                {/* </a> */}
               </li>
             </Link>
           ))}
@@ -58,7 +59,7 @@ const Navbar2 = () => {
         <Header id="header" />
       </Element>
       <Element name="services" className="element">
-        <Services />
+        <Services2 />
       </Element>
       <Element name="values" className="element">
         <Values />

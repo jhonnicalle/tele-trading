@@ -19,16 +19,21 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: 16
   },
   paper: {
-    backgroundColor: '#FFFFFF00',
-    opacity: 1, 
+    backgroundColor: '#FFFFFFAA',
     padding: theme.spacing(2),
     textAlign: 'center',
+    margin: "0 20px",
+    marginTop: '10px'
   },
   card: {
-    
     color: theme.palette.text.primary ,
   },
   paragraph: {
     
+  },
+  demo: {
+    backgroundColor: theme.palette.background.paper,
+    borderRadius: '5px',    
+    boxShadow: "0px 5px 10px -3px rgba(0,0,0,0.5)"
   }
 }));
