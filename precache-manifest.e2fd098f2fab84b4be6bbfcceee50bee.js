@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0aaf8b899802da7e3c0c004f5c1f3824",
+    "revision": "d4f78354703fd709ffb68a0ccc357191",
     "url": "/tele-trading/index.html"
   },
   {
-    "revision": "fd393e0174fb43308869",
-    "url": "/tele-trading/static/css/main.cbfb008a.chunk.css"
+    "revision": "3cbeb03f748567b3466a",
+    "url": "/tele-trading/static/css/main.68ab2efa.chunk.css"
   },
   {
-    "revision": "ac640afe0f69588552c6",
-    "url": "/tele-trading/static/js/2.d7e212b4.chunk.js"
+    "revision": "f3ec246422af9b55b37a",
+    "url": "/tele-trading/static/js/2.088badcd.chunk.js"
   },
   {
     "revision": "6472a7d1d95598048b2f7b02095da167",
-    "url": "/tele-trading/static/js/2.d7e212b4.chunk.js.LICENSE.txt"
+    "url": "/tele-trading/static/js/2.088badcd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fd393e0174fb43308869",
-    "url": "/tele-trading/static/js/main.a20f30e3.chunk.js"
+    "revision": "3cbeb03f748567b3466a",
+    "url": "/tele-trading/static/js/main.07f3b5f2.chunk.js"
   },
   {
     "revision": "d49b4fea78871fbe8be8",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d9a20dbb3e1ca538992be4a4611add69",
     "url": "/tele-trading/static/media/VALUES IMAGE.d9a20dbb.jpg"
+  },
+  {
+    "revision": "7cd2d447125e8b582ea190d9772c3742",
+    "url": "/tele-trading/static/media/logo BOX-01.7cd2d447.png"
   },
   {
     "revision": "74e359ae98da5282eb50e286f5dabfc0",
