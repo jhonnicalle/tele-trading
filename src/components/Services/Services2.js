@@ -1,4 +1,6 @@
 import {
+  Box,
+  Button,
   Container,
   Grid,
   List,
@@ -8,21 +10,174 @@ import {
   Paper,
   Typography
 } from '@material-ui/core'
-import React from 'react'
+import React, { useRef } from 'react'
 import { useStyles } from './Services2Styles'
 import './Services2.css'
-// import image from '../../images/SERVICES IMAGE.jpg'
-import { Check } from '@material-ui/icons'
+import image from '../../images/logo BOX-01.png'
+import { Check, ExitToApp } from '@material-ui/icons'
+import Carousel from 'react-material-ui-carousel'
 
 const Services2 = () => {
+  
+
   const classes = useStyles()
+
+  const boxServices = [
+    
+    {
+      card: {
+        point1: `Intermediación comercial internacional, asesoría integral para importaciones y exportaciones., enfocado básicamente
+        a países de Latinoamérica.`,
+        point2: `Acompañamiento en las negociaciones con compradores, proveedores y productores.`,
+      }
+    },
+    {
+      card: {
+        point1: `Búsqueda de nuevos proveedores. Soluciones integrales de internacionalización de los mercados de las PyMES y
+        microPymes de provincias específicas de España con proyección de sus productos para mercadeo nacional e
+        internacional.`,
+        point2: `Compartir Catálogo de productos novedosos con calidades y precios competitivos, de Empresas y PYMES.`,
+      }
+    },
+    {
+      card: {
+        point1: `Control de calidad de los productos ofertados.`,
+        point2: `Servicio de compras y entregas en lugar de destino acordado.`,
+      }
+    },
+    {
+      card: {
+        point1: `Logística internacional.`,
+        point2: ``,
+      }
+    }
+    
+  ]
 
   return (
     <div className={'background-screen-services'} >
-      <Typography className={classes.bigTitle} variant='h3' align='center'>
-        SERVICIOS
-      </Typography>
-      <Paper elevation={3}
+      <Container>
+        <Typography className={classes.bigTitle} variant='h3' align='center'>
+          SERVICIOS
+        </Typography>
+        <Grid container spacing={1}>
+          <Grid item xs={12} sm={12} md={5} lg={5}>
+            <Typography className={classes.bigTitle} variant='h5' align='center'>
+              SERVICIOS TELE-TRADING
+            </Typography>
+            <Typography variant='body1'>
+              En Tele-Trading nos encargamos de que los servicios que ofrecemos sean de excelente calidad 
+              y cubrir por completo todas las necesidades requeridas.
+            </Typography>
+            <Typography variant='body1'>
+              A continuación se muestra un listado de todos los servicios que ofrecemos como empresa.
+            </Typography>
+          </Grid>
+          <Grid item xs={12} sm={12} md={7} lg={7}>
+            <Grid className={classes.card} container>
+              <Carousel
+                className={classes.carousel}
+                animation="fade"
+                interval={1500000}
+                navButtonsAlwaysInvisible
+              >
+                {
+                  boxServices.map( (item, i) => (
+                    <Paper elevation={2} className={classes.paper} key={i}>
+                      <ListItem>
+                        <ListItemIcon>
+                          <Check />
+                        </ListItemIcon>
+                        <ListItemText>
+                          {item.card.point1}
+                        </ListItemText>
+                      </ListItem>
+                      {item.card.point2 !== '' && (
+                        <ListItem>
+                        <ListItemIcon>
+                          <Check />
+                        </ListItemIcon>
+                        <ListItemText>
+                          {item.card.point2}
+                        </ListItemText>
+                      </ListItem>
+                      )}
+                    </Paper>
+                  ))
+                }
+              </Carousel>
+            </Grid>         
+          </Grid>        
+        </Grid>      
+        <Grid container spacing={1}>
+          <Grid item xs={12} sm={12} md={5} lg={5}>
+            <Typography className={classes.bigTitle} variant='h5' align='center'>
+              SERVICIOS BOX
+            </Typography>
+            <Typography variant='body1'>
+              Box es una empresa aliada a Tele-Trading el cual ofrece una variedad de servicios
+            </Typography>
+            <Grid container
+            direction="row"
+            justify="center"
+            alignItems="center" 
+            spacing={1}>
+              <Grid className='image-services' item xs={6} sm={6} md={6} lg={6}>
+                <img src={image} alt='Imagen de servicios' />
+              </Grid>
+              <Grid className='image-services' item xs={6} sm={6} md={6} lg={6} alignItems="center">
+                <Button
+                  variant="contained"
+                  color="secondary"
+                  className={classes.button}
+                  startIcon={<ExitToApp />}
+                >
+                  Visitanos
+                </Button>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item xs={12} sm={12} md={7} lg={7}>
+            <Grid className={classes.card} container>
+              <Carousel
+                className={classes.carousel}
+                animation="fade"
+                interval={1500000}
+                navButtonsAlwaysInvisible
+              >
+                {
+                  boxServices.map( (item, i) => (
+                    <Box elevation={2} className={classes.paper} 
+                    key={i}>
+                      <List>
+                        <ListItem>
+                          <ListItemIcon>
+                            <Check />
+                          </ListItemIcon>
+                          <ListItemText>
+                            {item.card.point1}
+                          </ListItemText>
+                        </ListItem>
+                        {item.card.point2 !== '' && (
+                          <ListItem>
+                            <ListItemIcon>
+                              <Check />
+                            </ListItemIcon>
+                            <ListItemText>
+                              {item.card.point2}
+                            </ListItemText>
+                          </ListItem>
+                        )}
+                      </List>
+                    </Box>
+                  ))
+                }
+              </Carousel>
+            </Grid>         
+          </Grid>        
+        </Grid>   
+      </Container>
+      {/* <Paper elevation={3}
         // style={{margin: "0 20px", backgroundColor: "red", padding: "10px"}}
         className={classes.paper}
       >
@@ -274,10 +429,10 @@ const Services2 = () => {
                   </ListItemText>
                 </ListItem>
               </List>
-            </div>
-          </Grid>
+            </div>  
+          </Grid> 
 
-          {/* <Grid className='image-services' item xs={true} sm={6} md={6} lg={6}>
+          <Grid className='image-services' item xs={true} sm={6} md={6} lg={6}>
             <img src={image} alt='Imagen de servicios' />
           </Grid>
           <Grid item xs={12} sm={6} md={6} lg={6}>
@@ -306,9 +461,9 @@ const Services2 = () => {
                 </Paper>
               </Grid>
             </Grid>
-          </Grid> */}
+          </Grid>
         </Grid>
-      </Paper>
+      </Paper>*/}
     </div>
   )
 }

@@ -6,19 +6,24 @@ export const useStyles = makeStyles((theme) => ({
   },
   titleGuarantee: {
     padding: theme.spacing(2),
-    // color: "#FFFFF1"
+    
   },
   paragraph: {
     padding: theme.spacing(2),
   },
   paper: {
-    backgroundColor: '#FFFFFF00',
+    backgroundColor: '#FFFFFFE0',
     textAlign: 'center',
-    // height: `calc(100% - ${theme.spacing(2)}px)`,
+    height: '250px',
+    display: 'table-cell',
+    verticalAlign: 'middle',
     color: theme.palette.text.primary,
+    [theme.breakpoints.down('xs')]: {
+      height: '295px',
+    },
   },
   carousel: {
-    margin: theme.spacing(2),
+    margin: `0 ${theme.spacing(2)}px`,
     
   },
   button: {    

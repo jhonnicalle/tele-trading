@@ -14,6 +14,16 @@ export const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     height: `calc(100% - ${theme.spacing(4)}px)`,
     color: theme.palette.text.primary,
+    display: 'block'
+  },
+  paperInfo: {
+    height: 'auto',
+    display: 'table-cell',
+    verticalAlign: 'middle',
+  },
+  carousel: {
+    margin: `0 ${theme.spacing(2)}px`,
+    
   },
   grid: {
     [theme.breakpoints.down('xs')]: {
@@ -32,10 +42,9 @@ export const useStyles = makeStyles((theme) => ({
     borderRadius: '20px',
     margin: theme.spacing(1)
   },
-  // snackbar: {
+})); // snackbar: {
   //   width: '100%',
   //   '& > * + *': {
   //     marginTop: theme.spacing(2),
   //   },
   // },
-}));

@@ -45,23 +45,12 @@ const value = [
 
 const Values = () => {
   const classes = useStyles()
-  // const theme = useTheme();
-  // const [activeStep, setActiveStep] = React.useState(0);
-  // const maxSteps = value.length;
-
-  // const handleNext = () => {
-  //   setActiveStep((prevActiveStep) => prevActiveStep + 1);
-  // };
-
-  // const handleBack = () => {
-  //   setActiveStep((prevActiveStep) => prevActiveStep - 1);
-  // };
 
   return (
     <div className="background-screen-values">
       <Grid container>
         <Grid item xs={12} sm={12} md={6} lg={6}>
-          <Typography className={classes.bigTitle} variant='h3' align='center'>
+          <Typography className={classes.bigTitle} variant='h4' align='center'>
             VALORES
           </Typography>
           <div className={classes.root}>

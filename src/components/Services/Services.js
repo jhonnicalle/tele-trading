@@ -14,11 +14,11 @@ const Services = () => {
   return (
     <div className='background-screen-services'>
       <Grid container>
-        <Grid className='image-services' item xs={true} sm={6} md={6} lg={6}>
+        <Grid className='image-services' item xs={true} sm={5} md={5} lg={5}>
           <img src={image} alt='Imagen de servicios' />
         </Grid>
-        <Grid item xs={12} sm={6} md={6} lg={6}>
-          <Typography className={classes.bigTitle} variant='h3' align='center'>
+        <Grid item xs={12} sm={7} md={7} lg={7}>
+          <Typography className={classes.bigTitle} variant='h4' align='center'>
             SERVICIOS
           </Typography>
           <Grid className={classes.card} container>

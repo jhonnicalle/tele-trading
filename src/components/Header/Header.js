@@ -11,10 +11,10 @@ const Header = () => {
       <div className='transparent-background-header'>
         <Container>
           <Grid container className={classes.root} justify="center" alignItems="center">
-            <Grid item className={classes.paper} xs={12} sm={4} >
+            <Grid item className={classes.paper1} xs={12} sm={4} >
               <img className='logo2' src={logo} alt='Logo de la empresa' />
             </Grid>
-            <Grid item className={classes.paper} xs={12} sm={8} >
+            <Grid item className={classes.paper2} xs={12} sm={8} >
               <div className="home-info">
                 <h1 className="title">TELE-TRADING</h1>
                 <p>

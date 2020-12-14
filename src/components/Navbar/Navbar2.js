@@ -13,6 +13,7 @@ import logo from '../../images/logo-navbar.png'
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 import CloseRoundedIcon from '@material-ui/icons/CloseRounded';
 import Services2 from '../Services/Services2';
+// import Services from '../Services/Services';
 
 
 const location = {

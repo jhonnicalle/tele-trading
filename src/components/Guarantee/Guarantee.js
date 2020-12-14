@@ -55,11 +55,11 @@ const Guarantee = () => {
               <Carousel
                 className={classes.carousel}
                 animation="fade"
-                interval={15000}
+                interval={1500000}
               >
                 {
                   items.map( (item, i) => (
-                    <Paper elevation={0} className={classes.paper} key={i}>
+                    <Paper elevation={2} className={classes.paper} key={i}>
                       <Typography ref={wraper} className={classes.paragraph}>{item.description}</Typography>
                     </Paper>
                   ))
