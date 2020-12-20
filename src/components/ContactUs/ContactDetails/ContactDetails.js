@@ -21,15 +21,23 @@ const ContactDetails = () => {
 
   return (
     <Paper className={classes.paper}>
-      <Grid item xs={12}>
+      <Grid item xs={12} style={{height: '100%'}}>
         <Carousel
           className={classes.carousel}
           animation="fade"
-          interval={15000}
+          interval={150000}
         >
           {
-            items.map( (item, i) => (
+           ( items.map( (item, i) => (
               <Paper elevation={2} className={classes.paperInfo} key={i}>
+                <Grid container
+                  direction="row"
+                  justify="center"
+                  alignItems="center" 
+                  spacing={1}
+                  style={{height: "100%"}}
+                >
+                  <Grid item xs={12} sm={12}>
                 <Typography variant="h5" align='center' className={classes.titleContact}>
                   CORREO ELECTRÓNICO
                 </Typography>
@@ -50,8 +58,10 @@ const ContactDetails = () => {
                 <Typography variant="body1" align='center' gutterBottom>
                   {item.address}
                 </Typography>
+                </Grid>
+                </Grid>
               </Paper>
-            ))
+            )))
           }
         </Carousel>
       {/* <Typography variant="h5" align='center' className={classes.titleContact}>

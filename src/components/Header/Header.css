@@ -67,9 +67,9 @@
 }
 
 @media screen and (max-width: 599px)  {
-  /* .background-screen-header {
+  .background-screen-header {
     height: 100%;
-  } */
+  }
 
   .home-info h1{
     font-size: 32px;

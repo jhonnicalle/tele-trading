@@ -1,4 +1,5 @@
 import {
+  Container,
   Grid,
   Paper,
   Typography,
@@ -48,6 +49,7 @@ const Values = () => {
 
   return (
     <div className="background-screen-values">
+      <Container>
       <Grid container>
         <Grid item xs={12} sm={12} md={6} lg={6}>
           <Typography className={classes.bigTitle} variant='h4' align='center'>
@@ -74,6 +76,7 @@ const Values = () => {
           <img src={image} alt='Imagen de valores' />
         </Grid>
       </Grid>
+      </Container>
     </div>
   )
 }

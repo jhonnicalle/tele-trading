@@ -1,5 +1,5 @@
 import React, { createRef } from 'react'
-import { Grid, Paper, Typography } from '@material-ui/core'
+import { Container, Grid, Paper, Typography } from '@material-ui/core'
 import './Guarantee.css'
 import { useStyles } from './GuaranteeStyles'
 import image from '../../images/SERVICES IMAGE.jpg'
@@ -42,6 +42,7 @@ const Guarantee = () => {
 
   return (
     <div className='background-screen-guarantee'>
+      <Container>
       <Grid container>
         <Grid className='image-guarantee' item xs={true} sm={true} md={6} lg={6}>
           <img src={image} alt='Imagen de servicios' />
@@ -69,6 +70,7 @@ const Guarantee = () => {
           </Grid>
         </Grid>
       </Grid>
+      </Container>
     </div>
   )
 }

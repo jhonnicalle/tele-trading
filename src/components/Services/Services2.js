@@ -2,6 +2,7 @@ import {
   Box,
   Button,
   Container,
+  Divider,
   Grid,
   List,
   ListItem,
@@ -22,7 +23,7 @@ const Services2 = () => {
 
   const classes = useStyles()
 
-  const boxServices = [
+  const teleTradingServices = [
     
     {
       card: {
@@ -43,15 +44,68 @@ const Services2 = () => {
       card: {
         point1: `Control de calidad de los productos ofertados.`,
         point2: `Servicio de compras y entregas en lugar de destino acordado.`,
+        point3: `Servicio de compras y entregas en lugar de destino acordado.`,
+      }
+    }   
+  ]
+
+  const boxServices = [
+    
+    {
+      card: {
+        title: `BOX SERVICIOS INTERNACIONALES`,
+        point1: `Consolidación y grupaje de contenedores para clientes FCL Y LCL: Recepción, consolidación y reparto para destinos
+        hacia América Latina.`,
+        point2: `Recogidas y entregas de mercancías sin límite de peso.`,
+        point3: `Servicios especiales en Puertos, aeropuertos y polígonos.`,
       }
     },
     {
       card: {
-        point1: `Logística internacional.`,
-        point2: ``,
+        title: `BOX SERVICIOS INTERNACIONALES`,
+        point1: `Distribución P2P, B2B y C2C en la UE.`,
+        point2: `Servicio para empresas según la negociación de Incoterms.`,
+        point3: `Acuerdos arancelarios como IVA en país destino en caso de negociación con Incoterms DDP.`,
       }
-    }
-    
+    },  
+    {
+      card: {
+        title: `BOX SERVICIOS INTERNACIONALES`,
+        point1: `Negociaremos con los 7 Incoterms Polivalentes utilizados en cualquier tipo de transporte: EXW, FCA, CPT, CIP, DAT,
+        DAP y DDP.`,
+        point2: `Negociaremos con 4 Incoterms exclusivos para transporte marítimo: FAS, FOB, CFR y CIF.`,
+        point3: `Envíos nacionales e internacionales de mensajería urgente.`,
+      }
+    },
+    {
+      card: {
+        title: `BOX ENVIOS COURIER`,
+        point1: `Servicios Especiales: Repartos especiales de lotes, regalos de empresas, transporte de líquidos, etc. ofrece embalaje
+        como valor añadido.`,
+        point2: `Servicio Refrigerado para mercancías procedentes de América Latina hacia España.`,
+        point3: `Servicio de Mudanzas y Guardamuebles internacional, con entrega y recogida a domicilio.`,
+      }
+    },
+    {
+      card: {
+        title: `BOX ENVIOS COURIER`,
+        point1: `Envío de muebles y electrodomésticos P2P: montaje y retirada de embalajes y retiro de unidades en desuso
+        transportadas hacia centros de reciclaje.`,
+        point2: `TUBOX: compras bajo el lema  ̈COMPRA EN CUALQUIER LUGAR Y NOSOTROS TE LO LLEVAMOS ́,  ̈COMPRAMOS POR
+        TI ̈ ó  ̈COMPRAMOS POR ENCARGO ̈ en la UE o CHINA hacia determinados destinos de América Latina, productos
+        tales como: casa e interiores, coches y repuestos, maquinaria y equipos, y electrónica.`,
+        // point3: `Envíos nacionales e internacionales de mensajería urgente.`,
+      }
+    },
+    {
+      card: {
+        title: `BOX ENVIOS COURIER`,
+        point1: `Negociaremos con los 7 Incoterms Polivalentes utilizados en cualquier tipo de transporte: EXW, FCA, CPT, CIP, DAT,
+        DAP y DDP.`,
+        point2: `Negociaremos con 4 Incoterms exclusivos para transporte marítimo: FAS, FOB, CFR y CIF.`,
+        point3: `Envíos nacionales e internacionales de mensajería urgente.`,
+      }
+    },
   ]
 
   return (
@@ -69,9 +123,6 @@ const Services2 = () => {
               En Tele-Trading nos encargamos de que los servicios que ofrecemos sean de excelente calidad 
               y cubrir por completo todas las necesidades requeridas.
             </Typography>
-            <Typography variant='body1'>
-              A continuación se muestra un listado de todos los servicios que ofrecemos como empresa.
-            </Typography>
           </Grid>
           <Grid item xs={12} sm={12} md={7} lg={7}>
             <Grid className={classes.card} container>
@@ -82,33 +133,54 @@ const Services2 = () => {
                 navButtonsAlwaysInvisible
               >
                 {
-                  boxServices.map( (item, i) => (
-                    <Paper elevation={2} className={classes.paper} key={i}>
-                      <ListItem>
-                        <ListItemIcon>
-                          <Check />
-                        </ListItemIcon>
-                        <ListItemText>
-                          {item.card.point1}
-                        </ListItemText>
-                      </ListItem>
-                      {item.card.point2 !== '' && (
+                  (teleTradingServices.map( (item, i) => (
+                    <Paper elevation={2} className={classes.paperTeletrading} key={i}>
+                       <Grid container
+                        direction="row"
+                        justify="center"
+                        alignItems="center" 
+                        spacing={1}
+                        style={{height: "100%"}}
+                      >
+                      <List>
                         <ListItem>
-                        <ListItemIcon>
-                          <Check />
-                        </ListItemIcon>
-                        <ListItemText>
-                          {item.card.point2}
-                        </ListItemText>
-                      </ListItem>
-                      )}
+                          <ListItemIcon>
+                            <Check />
+                          </ListItemIcon>
+                          <ListItemText disableTypography>
+                            {item.card.point1}
+                          </ListItemText>
+                        </ListItem>
+                        {item.card.point2 && (
+                        <ListItem>
+                          <ListItemIcon>
+                            <Check />
+                          </ListItemIcon>
+                          <ListItemText disableTypography>
+                            {item.card.point2}
+                          </ListItemText>
+                        </ListItem>
+                        )} 
+                        {item.card.point3 && (
+                          <ListItem>
+                          <ListItemIcon>
+                            <Check />
+                          </ListItemIcon>
+                          <ListItemText disableTypography>
+                            {item.card.point3}
+                          </ListItemText>
+                        </ListItem>
+                        )}
+                      </List>
+                      </Grid>
                     </Paper>
-                  ))
+                  )))
                 }
               </Carousel>
             </Grid>         
           </Grid>        
-        </Grid>      
+        </Grid>
+        <Divider />
         <Grid container spacing={1}>
           <Grid item xs={12} sm={12} md={5} lg={5}>
             <Typography className={classes.bigTitle} variant='h5' align='center'>
@@ -138,7 +210,7 @@ const Services2 = () => {
             </Grid>
           </Grid>
           <Grid item xs={12} sm={12} md={7} lg={7}>
-            <Grid className={classes.card} container>
+            {/* <Grid className={classes.card} container > */}
               <Carousel
                 className={classes.carousel}
                 animation="fade"
@@ -147,33 +219,53 @@ const Services2 = () => {
               >
                 {
                   boxServices.map( (item, i) => (
-                    <Box elevation={2} className={classes.paper} 
-                    key={i}>
-                      <List>
-                        <ListItem>
-                          <ListItemIcon>
-                            <Check />
-                          </ListItemIcon>
-                          <ListItemText>
-                            {item.card.point1}
-                          </ListItemText>
-                        </ListItem>
-                        {item.card.point2 !== '' && (
+                    <Paper elevation={2} className={classes.paperBox} key={i}>
+                      <Grid container
+                        direction="row"
+                        justify="center"
+                        alignItems="center" 
+                        spacing={1}
+                        style={{height: "100%"}}
+                      >
+                        <Typography variant='subtitle1' align='center'>{item.card.title}</Typography>
+                        <Grid item xs={12} sm={12}>
+                        <List>
                           <ListItem>
                             <ListItemIcon>
                               <Check />
                             </ListItemIcon>
-                            <ListItemText>
-                              {item.card.point2}
+                            <ListItemText disableTypography>
+                              {item.card.point1}
                             </ListItemText>
                           </ListItem>
-                        )}
-                      </List>
-                    </Box>
+                          {item.card.point2 !== '' && (
+                            <ListItem>
+                              <ListItemIcon>
+                                <Check />
+                              </ListItemIcon>
+                              <ListItemText disableTypography>
+                                {item.card.point2}
+                              </ListItemText>
+                            </ListItem>
+                          )}
+                          {item.card.point3 && (
+                            <ListItem>
+                            <ListItemIcon>
+                              <Check />
+                            </ListItemIcon>
+                            <ListItemText disableTypography>
+                              {item.card.point3}
+                            </ListItemText>
+                          </ListItem>
+                          )}
+                          </List>
+                        </Grid>
+                      </Grid>
+                    </Paper>
                   ))
                 }
               </Carousel>
-            </Grid>         
+            {/* </Grid> */}
           </Grid>        
         </Grid>   
       </Container>
