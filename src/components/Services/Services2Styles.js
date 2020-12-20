@@ -1,5 +1,3 @@
-import { Height } from "@material-ui/icons";
-
 const { makeStyles } = require("@material-ui/core");
 
 export const useStyles = makeStyles((theme) => ({

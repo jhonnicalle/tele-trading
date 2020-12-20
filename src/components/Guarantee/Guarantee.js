@@ -61,7 +61,18 @@ const Guarantee = () => {
                 {
                   items.map( (item, i) => (
                     <Paper elevation={2} className={classes.paper} key={i}>
-                      <Typography ref={wraper} className={classes.paragraph}>{item.description}</Typography>
+                      <Grid container
+                        direction="row"
+                        justify="center"
+                        alignItems="center" 
+                        spacing={1}
+                        style={{height: "100%"}}
+                      >
+                        <Grid item xs={12} sm={12}>
+                          {/* <Typography ref={wraper} className={classes.paragraph}>{item.description}</Typography> */}
+                          <p ref={wraper} className={classes.paragraph}>{item.description}</p>
+                        </Grid>
+                      </Grid>
                     </Paper>
                   ))
                 }

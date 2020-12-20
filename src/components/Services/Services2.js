@@ -1,5 +1,4 @@
 import {
-  Box,
   Button,
   Container,
   Divider,
@@ -11,7 +10,7 @@ import {
   Paper,
   Typography
 } from '@material-ui/core'
-import React, { useRef } from 'react'
+import React from 'react'
 import { useStyles } from './Services2Styles'
 import './Services2.css'
 import image from '../../images/logo BOX-01.png'
@@ -20,7 +19,6 @@ import Carousel from 'react-material-ui-carousel'
 
 const Services2 = () => {
   
-
   const classes = useStyles()
 
   const teleTradingServices = [
@@ -135,7 +133,7 @@ const Services2 = () => {
                 {
                   (teleTradingServices.map( (item, i) => (
                     <Paper elevation={2} className={classes.paperTeletrading} key={i}>
-                       <Grid container
+                      <Grid container
                         direction="row"
                         justify="center"
                         alignItems="center" 
