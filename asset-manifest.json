@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/tele-trading/static/css/main.68ab2efa.chunk.css",
-    "main.js": "/tele-trading/static/js/main.07f3b5f2.chunk.js",
-    "main.js.map": "/tele-trading/static/js/main.07f3b5f2.chunk.js.map",
+    "main.css": "/tele-trading/static/css/main.9c877600.chunk.css",
+    "main.js": "/tele-trading/static/js/main.ccb14c1f.chunk.js",
+    "main.js.map": "/tele-trading/static/js/main.ccb14c1f.chunk.js.map",
     "runtime-main.js": "/tele-trading/static/js/runtime-main.b1381e78.js",
     "runtime-main.js.map": "/tele-trading/static/js/runtime-main.b1381e78.js.map",
-    "static/js/2.088badcd.chunk.js": "/tele-trading/static/js/2.088badcd.chunk.js",
-    "static/js/2.088badcd.chunk.js.map": "/tele-trading/static/js/2.088badcd.chunk.js.map",
+    "static/js/2.ce25d8b8.chunk.js": "/tele-trading/static/js/2.ce25d8b8.chunk.js",
+    "static/js/2.ce25d8b8.chunk.js.map": "/tele-trading/static/js/2.ce25d8b8.chunk.js.map",
     "index.html": "/tele-trading/index.html",
-    "precache-manifest.e2fd098f2fab84b4be6bbfcceee50bee.js": "/tele-trading/precache-manifest.e2fd098f2fab84b4be6bbfcceee50bee.js",
+    "precache-manifest.029484f015c97691ccf52dff6aed4aa2.js": "/tele-trading/precache-manifest.029484f015c97691ccf52dff6aed4aa2.js",
     "service-worker.js": "/tele-trading/service-worker.js",
-    "static/css/main.68ab2efa.chunk.css.map": "/tele-trading/static/css/main.68ab2efa.chunk.css.map",
-    "static/js/2.088badcd.chunk.js.LICENSE.txt": "/tele-trading/static/js/2.088badcd.chunk.js.LICENSE.txt",
+    "static/css/main.9c877600.chunk.css.map": "/tele-trading/static/css/main.9c877600.chunk.css.map",
+    "static/js/2.ce25d8b8.chunk.js.LICENSE.txt": "/tele-trading/static/js/2.ce25d8b8.chunk.js.LICENSE.txt",
     "static/media/ContactUs.css": "/tele-trading/static/media/CONTACT US BACKGROUND.55195ee2.jpg",
     "static/media/Header.css": "/tele-trading/static/media/HEADER BACKGROUND.b12b3430.jpg",
     "static/media/SERVICES IMAGE.jpg": "/tele-trading/static/media/SERVICES IMAGE.5c626240.jpg",
@@ -22,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b1381e78.js",
-    "static/js/2.088badcd.chunk.js",
-    "static/css/main.68ab2efa.chunk.css",
-    "static/js/main.07f3b5f2.chunk.js"
+    "static/js/2.ce25d8b8.chunk.js",
+    "static/css/main.9c877600.chunk.css",
+    "static/js/main.ccb14c1f.chunk.js"
   ]
 }
