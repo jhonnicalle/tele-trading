@@ -25,7 +25,7 @@ const ContactDetails = () => {
         <Carousel
           className={classes.carousel}
           animation="fade"
-          interval={150000}
+          interval={15000}
         >
           {
             ( items.map( (item, i) => (

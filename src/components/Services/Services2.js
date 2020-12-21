@@ -127,7 +127,7 @@ const Services2 = () => {
               <Carousel
                 className={classes.carousel}
                 animation="fade"
-                interval={1500000}
+                interval={15000}
                 navButtonsAlwaysInvisible
               >
                 {
@@ -212,7 +212,7 @@ const Services2 = () => {
               <Carousel
                 className={classes.carousel}
                 animation="fade"
-                interval={1500000}
+                interval={15000}
                 navButtonsAlwaysInvisible
               >
                 {

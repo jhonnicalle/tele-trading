@@ -42,13 +42,13 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('450')]: {
       height: '350px',
     },
-    [theme.breakpoints.down('325')]: {
-      fontSize: '14px',
+    [theme.breakpoints.down('400')]: {
+      fontSize: '12px',
       height: '360px',
     },
-    [theme.breakpoints.down('300')]: {
-      fontSize: '14px',
-      // height: '350px',
+    [theme.breakpoints.down('350')]: {
+      // fontSize: '12px',
+      height: '370px',
     },
   },
   paperBox: {
@@ -67,15 +67,19 @@ export const useStyles = makeStyles((theme) => ({
       height: '400px',
     },
     [theme.breakpoints.down('450')]: {
-      fontSize: '13px',
+      // fontSize: '13px',
       height: '420px',
     },
-    [theme.breakpoints.down('325')]: {
+    [theme.breakpoints.down('400')]: {
       fontSize: '12px',
-      height: '500px',
+      height: '420px',
+    },
+    [theme.breakpoints.down('350')]: {
+      fontSize: '12px',
+      height: '520px',
     },
     [theme.breakpoints.down('300')]: {
-      fontSize: '14px',
+      // fontSize: '14px',
       // height: '350px',
     },
   },

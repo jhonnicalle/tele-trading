@@ -23,7 +23,7 @@ export const useStyles = makeStyles((theme) => ({
     height: "440px",
     padding: "10px",
     [theme.breakpoints.down('xs')]: {
-      height: "320px",
+      height: "380px",
     }
 
   },

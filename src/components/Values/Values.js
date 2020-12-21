@@ -59,13 +59,23 @@ const Values = () => {
             <Carousel
                 className={classes.carousel}
                 animation="fade"
-                interval={15000}
+                interval={1500000}
               >
                 {
                   value.map( (item, i) => (
                     <Paper elevation={0} className={classes.paper} key={i}>
-                      <Typography align='center' variant='h5' className={classes.paragraph}>{item.title}</Typography>
-                      <Typography className={classes.paragraph}>{item.content}</Typography>
+                      <Grid container
+                        direction="row"
+                        justify="center"
+                        // alignItems="center" 
+                        spacing={1}
+                        style={{height: "100%"}}
+                      >
+                        <Typography align='center' variant='h5' className={classes.paragraph}>{item.title}</Typography>
+                        <Grid item xs={12} sm={12} alignItems='center'>
+                          <p className={classes.paragraph}>{item.content}</p>
+                        </Grid>
+                      </Grid>
                     </Paper>
                   ))
                 }

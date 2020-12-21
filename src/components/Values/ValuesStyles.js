@@ -10,10 +10,46 @@ export const useStyles = makeStyles((theme) => ({
   },
   paper: {
     backgroundColor: '#FFFFFFAA',
-    textAlign: 'center',
-    height: '100%',
+    // textAlign: 'center',
     color: theme.palette.text.primary,
-    borderRadius: 20
+    // borderRadius: 20,
+    padding: theme.spacing(2),
+    // textAlign: 'center',
+    // marginTop: '10px',
+    height: '250px',
+    lineHeight: 1.5,
+    [theme.breakpoints.up('lg')]: {
+      fontSize: "20px",
+      // height: '320px',
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '14px',
+      // height: '320px',
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '14px',
+      // height: '320px',
+    },
+    [theme.breakpoints.down('550')]: {
+      // fontSize: '13px',
+      height: '300px',
+    },
+    [theme.breakpoints.down('450')]: {
+      // fontSize: '13px',
+      // height: '420px',
+    },
+    [theme.breakpoints.down('400')]: {
+      fontSize: '12px',
+      // height: '420px',
+    },
+    [theme.breakpoints.down('350')]: {
+      fontSize: '12px',
+      height: '350px',
+    },
+    [theme.breakpoints.down('300')]: {
+      // fontSize: '14px',
+      // height: '350px',
+    },
   },
   card: {
     backgroundColor: '#FFFFFFAA',
@@ -22,7 +58,7 @@ export const useStyles = makeStyles((theme) => ({
     borderRadius: 10
   },
   paragraph: {
-    padding: theme.spacing(2),
+    // padding: theme.spacing(2),
   },
   header: {
     // display: 'flex',

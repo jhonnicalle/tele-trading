@@ -49,7 +49,7 @@ export const useStyles = makeStyles((theme) => ({
       // height: '280px',
     },
     [theme.breakpoints.down('400')]: {
-      fontSize: "13px",
+      fontSize: "12px",
       // height: '280px',
     },
   },

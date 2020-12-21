@@ -8,6 +8,8 @@ import { useStyles } from './MapStyles'
 const Map = ({location, zoomLevel}) => {
   const classes = useStyles()
 
+  
+
   return (
     <div style={{ width: '100%' }} className="map">
       <Container>
@@ -15,13 +17,19 @@ const Map = ({location, zoomLevel}) => {
         <div className={classes.map}>
           <GoogleMapReact            
             bootstrapURLKeys={{ key: 'AIzaSyCeo4KCNtlvV2Wo04x353GFFyg0g0HPDio' }}
-            defaultCenter={location}
+            defaultCenter={location[0]}
             defaultZoom={zoomLevel}
           >
             <LocationPin
-              lat={location.lat}
-              lng={location.lng}
-              text={location.address}
+              lat={location[0].lat}
+              lng={location[0].lng}
+              text={location[0].address}
+              color='blue'
+            />
+            <LocationPin
+              lat={location[1].lat}
+              lng={location[1].lng}
+              text={location[1].address}
               color='blue'
             />
           </GoogleMapReact>
