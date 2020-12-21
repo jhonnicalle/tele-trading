@@ -20,6 +20,12 @@ export const useStyles = makeStyles((theme) => ({
     // height: 'auto',
     // display: 'table-cell',
     // verticalAlign: 'middle',
+    height: "440px",
+    padding: "10px",
+    [theme.breakpoints.down('xs')]: {
+      height: "320px",
+    }
+
   },
   carousel: {
     height: '100%',

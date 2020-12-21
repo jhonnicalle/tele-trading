@@ -109,7 +109,7 @@ const Services2 = () => {
   return (
     <div className={'background-screen-services'} >
       <Container>
-        <Typography className={classes.bigTitle} variant='h3' align='center'>
+        <Typography className={classes.bigTitle} variant='h4' align='center'>
           SERVICIOS
         </Typography>
         <Grid container spacing={1}>
@@ -225,7 +225,7 @@ const Services2 = () => {
                         spacing={1}
                         style={{height: "100%"}}
                       >
-                        <Typography variant='subtitle1' align='center'>{item.card.title}</Typography>
+                        <Typography variant='h5' align='center'>{item.card.title}</Typography>
                         <Grid item xs={12} sm={12}>
                         <List>
                           <ListItem>

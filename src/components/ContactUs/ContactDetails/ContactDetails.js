@@ -28,7 +28,7 @@ const ContactDetails = () => {
           interval={150000}
         >
           {
-           ( items.map( (item, i) => (
+            ( items.map( (item, i) => (
               <Paper elevation={2} className={classes.paperInfo} key={i}>
                 <Grid container
                   direction="row"
@@ -38,45 +38,32 @@ const ContactDetails = () => {
                   style={{height: "100%"}}
                 >
                   <Grid item xs={12} sm={12}>
-                <Typography variant="h5" align='center' className={classes.titleContact}>
-                  CORREO ELECTRÓNICO
-                </Typography>
-                <Typography variant="body1" align='center' gutterBottom>
-                  {item.email}
-                </Typography>
-                <Divider />
-                <Typography variant="h5" align='center' className={classes.titleContact}>
-                  TELÉFONO
-                </Typography>
-                <Typography variant="body1" align='center' gutterBottom>
-                  {item.cellphone}
-                </Typography>
-                <Divider />
-                <Typography variant="h5" align='center' className={classes.titleContact}>
-                  DIRECCIÓN
-                </Typography>
-                <Typography variant="body1" align='center' gutterBottom>
-                  {item.address}
-                </Typography>
-                </Grid>
+                    <Typography variant="h5" align='center' className={classes.titleContact}>
+                      CORREO ELECTRÓNICO
+                    </Typography>
+                    <Typography variant="body1" align='center' gutterBottom>
+                      {item.email}
+                    </Typography>
+                    <Divider />
+                    <Typography variant="h5" align='center' className={classes.titleContact}>
+                      TELÉFONO
+                    </Typography>
+                    <Typography variant="body1" align='center' gutterBottom>
+                      {item.cellphone}
+                    </Typography>
+                    <Divider />
+                    <Typography variant="h5" align='center' className={classes.titleContact}>
+                      DIRECCIÓN
+                    </Typography>
+                    <Typography variant="body1" align='center' gutterBottom>
+                      {item.address}
+                    </Typography>
+                  </Grid>
                 </Grid>
               </Paper>
             )))
           }
         </Carousel>
-      {/* <Typography variant="h5" align='center' className={classes.titleContact}>
-        TELÉFONO
-      </Typography>
-      <Typography variant="body1" align='center' gutterBottom>
-        +34 642 270296
-      </Typography>
-      <Divider />
-      <Typography variant="h5" align='center' className={classes.titleContact}>
-        DIRECCIÓN
-      </Typography>
-      <Typography variant="body1" align='center' gutterBottom>
-        Calle General Vara de Rey 26, Logroño, La Rioja. CP26002, España
-      </Typography> */}
       </Grid>
     </Paper>
   )
