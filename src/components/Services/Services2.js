@@ -16,6 +16,7 @@ import './Services2.css'
 import image from '../../images/logo BOX-01.png'
 import { Check, ExitToApp } from '@material-ui/icons'
 import Carousel from 'react-material-ui-carousel'
+import Fade from 'react-reveal/Fade'
 
 const Services2 = () => {
   
@@ -108,7 +109,9 @@ const Services2 = () => {
 
   return (
     <div className={'background-screen-services'} >
+
       <Container>
+        <Fade bottom cascade>
         <Typography className={classes.bigTitle} variant='h4' align='center'>
           SERVICIOS
         </Typography>
@@ -127,7 +130,7 @@ const Services2 = () => {
               <Carousel
                 className={classes.carousel}
                 animation="fade"
-                interval={15000}
+                interval={12000}
                 navButtonsAlwaysInvisible
               >
                 {
@@ -140,36 +143,38 @@ const Services2 = () => {
                         spacing={1}
                         style={{height: "100%"}}
                       >
-                      <List>
-                        <ListItem>
-                          <ListItemIcon>
-                            <Check />
-                          </ListItemIcon>
-                          <ListItemText disableTypography>
-                            {item.card.point1}
-                          </ListItemText>
-                        </ListItem>
-                        {item.card.point2 && (
-                        <ListItem>
-                          <ListItemIcon>
-                            <Check />
-                          </ListItemIcon>
-                          <ListItemText disableTypography>
-                            {item.card.point2}
-                          </ListItemText>
-                        </ListItem>
-                        )} 
-                        {item.card.point3 && (
-                          <ListItem>
-                          <ListItemIcon>
-                            <Check />
-                          </ListItemIcon>
-                          <ListItemText disableTypography>
-                            {item.card.point3}
-                          </ListItemText>
-                        </ListItem>
-                        )}
-                      </List>
+                        <Fade bottom cascade>
+                          <List>
+                            <ListItem>
+                              <ListItemIcon>
+                                <Check />
+                              </ListItemIcon>
+                              <ListItemText disableTypography>
+                                {item.card.point1}
+                              </ListItemText>
+                            </ListItem>
+                            {item.card.point2 && (
+                            <ListItem>
+                              <ListItemIcon>
+                                <Check />
+                              </ListItemIcon>
+                              <ListItemText disableTypography>
+                                {item.card.point2}
+                              </ListItemText>
+                            </ListItem>
+                            )} 
+                            {item.card.point3 && (
+                              <ListItem>
+                              <ListItemIcon>
+                                <Check />
+                              </ListItemIcon>
+                              <ListItemText disableTypography>
+                                {item.card.point3}
+                              </ListItemText>
+                            </ListItem>
+                            )}
+                          </List>
+                        </Fade>
                       </Grid>
                     </Paper>
                   )))
@@ -181,9 +186,13 @@ const Services2 = () => {
         <Divider />
         <Grid container spacing={1}>
           <Grid item xs={12} sm={12} md={5} lg={5}>
-            <Typography className={classes.bigTitle} variant='h5' align='center'>
-              SERVICIOS BOX
-            </Typography>
+           
+              <Typography className={classes.bigTitle} variant='h5' align='center'>
+                <Fade big cascade>
+                  SERVICIOS BOX
+                </Fade>
+              </Typography>
+            
             <Typography variant='body1'>
               Box es una empresa aliada a Tele-Trading el cual ofrece una variedad de servicios
             </Typography>
@@ -196,14 +205,16 @@ const Services2 = () => {
                 <img src={image} alt='Imagen de servicios' />
               </Grid>
               <Grid className='image-services' item xs={6} sm={6} md={6} lg={6} alignItems="center">
-                <Button
-                  variant="contained"
-                  color="secondary"
-                  className={classes.button}
-                  startIcon={<ExitToApp />}
-                >
-                  Visitanos
-                </Button>
+                <a href="http://www.google.com" rel="noopener noreferrer" target="_blank">
+                  <Button
+                    variant="contained"
+                    color="secondary"
+                    className={classes.button}
+                    startIcon={<ExitToApp />}
+                  >
+                    Visitanos
+                  </Button>
+                </a>
               </Grid>
             </Grid>
           </Grid>
@@ -212,7 +223,7 @@ const Services2 = () => {
               <Carousel
                 className={classes.carousel}
                 animation="fade"
-                interval={15000}
+                interval={12000}
                 navButtonsAlwaysInvisible
               >
                 {
@@ -227,36 +238,38 @@ const Services2 = () => {
                       >
                         <Typography variant='h5' align='center'>{item.card.title}</Typography>
                         <Grid item xs={12} sm={12}>
-                        <List>
-                          <ListItem>
-                            <ListItemIcon>
-                              <Check />
-                            </ListItemIcon>
-                            <ListItemText disableTypography>
-                              {item.card.point1}
-                            </ListItemText>
-                          </ListItem>
-                          {item.card.point2 !== '' && (
-                            <ListItem>
-                              <ListItemIcon>
-                                <Check />
-                              </ListItemIcon>
-                              <ListItemText disableTypography>
-                                {item.card.point2}
-                              </ListItemText>
-                            </ListItem>
-                          )}
-                          {item.card.point3 && (
-                            <ListItem>
-                            <ListItemIcon>
-                              <Check />
-                            </ListItemIcon>
-                            <ListItemText disableTypography>
-                              {item.card.point3}
-                            </ListItemText>
-                          </ListItem>
-                          )}
-                          </List>
+                          <Fade bottom cascade>
+                            <List>
+                              <ListItem>
+                                <ListItemIcon>
+                                  <Check />
+                                </ListItemIcon>
+                                <ListItemText disableTypography>
+                                  {item.card.point1}
+                                </ListItemText>
+                              </ListItem>
+                              {item.card.point2 !== '' && (
+                                <ListItem>
+                                  <ListItemIcon>
+                                    <Check />
+                                  </ListItemIcon>
+                                  <ListItemText disableTypography>
+                                    {item.card.point2}
+                                  </ListItemText>
+                                </ListItem>
+                              )}
+                              {item.card.point3 && (
+                                <ListItem>
+                                <ListItemIcon>
+                                  <Check />
+                                </ListItemIcon>
+                                <ListItemText disableTypography>
+                                  {item.card.point3}
+                                </ListItemText>
+                              </ListItem>
+                              )}
+                            </List>
+                          </Fade>
                         </Grid>
                       </Grid>
                     </Paper>
@@ -266,6 +279,7 @@ const Services2 = () => {
             {/* </Grid> */}
           </Grid>        
         </Grid>   
+        </Fade>
       </Container>
       {/* <Paper elevation={3}
         // style={{margin: "0 20px", backgroundColor: "red", padding: "10px"}}

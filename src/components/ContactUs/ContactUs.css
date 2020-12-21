@@ -5,7 +5,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 
@@ -19,8 +19,4 @@
   .background-screen-contactus {
     height: 100%;
   }
-
-  /* .transparent-backgrund-contactus {
-    height: 100%;
-  } */
 }

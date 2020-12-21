@@ -4,6 +4,7 @@ import './Guarantee.css'
 import { useStyles } from './GuaranteeStyles'
 import image from '../../images/SERVICES IMAGE.jpg'
 import Carousel from 'react-material-ui-carousel'
+import Fade from 'react-reveal/Fade'
 
 const Guarantee = () => {
   const classes = useStyles()
@@ -43,6 +44,7 @@ const Guarantee = () => {
   return (
     <div className='background-screen-guarantee'>
       <Container>
+      <Fade bottom>
       <Grid container>
         <Grid className='image-guarantee' item xs={true} sm={true} md={6} lg={6}>
           <img src={image} alt='Imagen de servicios' />
@@ -56,7 +58,7 @@ const Guarantee = () => {
               <Carousel
                 className={classes.carousel}
                 animation="fade"
-                interval={15000}
+                interval={12000}
               >
                 {
                   items.map( (item, i) => (
@@ -80,7 +82,9 @@ const Guarantee = () => {
             </Grid>
           </Grid>
         </Grid>
+        
       </Grid>
+      </Fade>
       </Container>
     </div>
   )

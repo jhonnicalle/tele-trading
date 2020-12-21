@@ -5,6 +5,7 @@ import { useStyles } from './ContactUsStyles';
 import ContactForm from './ContactForm/ContactForm';
 // import ContactForm from './ContactForm/ContactForm2';
 import ContactDetails from './ContactDetails/ContactDetails';
+import Fade from 'react-reveal/Fade'
 
 const ContactUs = () => {
   const classes = useStyles()
@@ -12,6 +13,7 @@ const ContactUs = () => {
     <div className='background-screen-contactus' id="contactus">
       <div className='transparent-backgrund-contactus'>
         <Container>
+        <Fade bottom>
           <Typography variant="h4" align='center' className={classes.titleContact}>
             CONTACTANOS
           </Typography>
@@ -23,6 +25,8 @@ const ContactUs = () => {
               <ContactForm />              
             </Grid>
           </Grid>
+        </Fade>
+
         </Container>
       </div>
     </div>

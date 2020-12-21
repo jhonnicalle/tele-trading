@@ -9,6 +9,8 @@ import { useStyles } from './ValuesStyles';
 import './Values.css';
 import image from '../../images/VALUES IMAGE.jpg'
 import Carousel from 'react-material-ui-carousel';
+import Zoom from 'react-reveal/Zoom'
+import Fade from 'react-reveal/Fade'
 
 const value = [
   {
@@ -50,42 +52,48 @@ const Values = () => {
   return (
     <div className="background-screen-values">
       <Container>
-      <Grid container>
-        <Grid item xs={12} sm={12} md={6} lg={6}>
-          <Typography className={classes.bigTitle} variant='h4' align='center'>
-            VALORES
-          </Typography>
-          <div className={classes.root}>
-            <Carousel
-                className={classes.carousel}
-                animation="fade"
-                interval={1500000}
-              >
-                {
-                  value.map( (item, i) => (
-                    <Paper elevation={0} className={classes.paper} key={i}>
-                      <Grid container
-                        direction="row"
-                        justify="center"
-                        // alignItems="center" 
-                        spacing={1}
-                        style={{height: "100%"}}
-                      >
-                        <Typography align='center' variant='h5' className={classes.paragraph}>{item.title}</Typography>
-                        <Grid item xs={12} sm={12} alignItems='center'>
-                          <p className={classes.paragraph}>{item.content}</p>
+      <Fade bottom>
+        <Grid container>
+          <Grid item xs={12} sm={12} md={6} lg={6}>
+            <Typography className={classes.bigTitle} variant='h4' align='center'>
+              VALORES
+            </Typography>
+            <div className={classes.root}>
+              <Carousel
+                  className={classes.carousel}
+                  animation="fade"
+                  interval={12000}
+                >
+                  {
+                    value.map( (item, i) => (
+                      <Paper elevation={0} className={classes.paper} key={i}>
+                        <Grid container
+                          direction="row"
+                          justify="center"
+                          // alignItems="center" 
+                          spacing={1}
+                          style={{height: "100%"}}
+                        >
+                          <Typography align='center' variant='h5' className={classes.paragraph}>{item.title}</Typography>
+                          <Grid item xs={12} sm={12} alignItems='center'>
+                            <p className={classes.paragraph}>{item.content}</p>
+                          </Grid>
                         </Grid>
-                      </Grid>
-                    </Paper>
-                  ))
-                }
-              </Carousel>
-          </div>
+                      </Paper>
+                    ))
+                  }
+                </Carousel>
+            </div>
+          </Grid>
+          <Grid className='image-values' item xs={true} sm={true} md={6} lg={6} >
+            {/* <Paper elevation={3}> */}
+            {/* <Zoom> */}
+              <img src={image} alt='Imagen de valores' />
+            {/* </Zoom> */}
+            {/* </Paper> */}
+          </Grid>
         </Grid>
-        <Grid className='image-values' item xs={true} sm={true} md={6} lg={6}>
-          <img src={image} alt='Imagen de valores' />
-        </Grid>
-      </Grid>
+      </Fade>
       </Container>
     </div>
   )

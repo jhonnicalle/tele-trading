@@ -22,8 +22,8 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: "20px",
       // height: '320px',
     },
-    [theme.breakpoints.down('xs')]: {
-      fontSize: '14px',
+    [theme.breakpoints.down('lg')]: {
+      fontSize: '18px',
       // height: '320px',
     },
     [theme.breakpoints.down('xs')]: {
@@ -32,7 +32,7 @@ export const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down('550')]: {
       // fontSize: '13px',
-      height: '300px',
+      // height: '300px',
     },
     [theme.breakpoints.down('450')]: {
       // fontSize: '13px',
@@ -44,7 +44,7 @@ export const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down('350')]: {
       fontSize: '12px',
-      height: '350px',
+      // height: '350px',
     },
     [theme.breakpoints.down('300')]: {
       // fontSize: '14px',

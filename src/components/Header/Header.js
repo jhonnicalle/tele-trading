@@ -3,6 +3,9 @@ import { Container, Grid } from '@material-ui/core';
 import './Header.css';
 import { useStyles } from './HeaderStyles';
 import logo from '../../images/logo T-01.png';
+import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
+
 
 const Header = () => {
   const classes = useStyles()
@@ -11,10 +14,16 @@ const Header = () => {
       <div className='transparent-background-header'>
         <Container>
           <Grid container className={classes.root} justify="center" alignItems="center">
+          
             <Grid item className={classes.paper1} xs={12} sm={4} >
-              <img className='logo2' src={logo} alt='Logo de la empresa' />
+              <Zoom>
+                <img className='logo2' src={logo} alt='Logo de la empresa' />
+              </Zoom>
             </Grid>
+          
+          
             <Grid item className={classes.paper2} xs={12} sm={8} >
+            <Fade bottom>
               <div className="home-info">
                 <h1 className="title">TELE-TRADING</h1>
                 <p>
@@ -26,7 +35,9 @@ const Header = () => {
                   nuestros clientes. 
                   </p>
               </div>
+              </Fade>
             </Grid>
+          
           </Grid>
         </Container>
       </div>

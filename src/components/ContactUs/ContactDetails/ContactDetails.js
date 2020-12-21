@@ -15,7 +15,7 @@ const ContactDetails = () => {
     {
       email: 'admin@tele-trading.com',
       cellphone: '+1 786 3503989',
-      address: '1489 SE 17TH ST STE 2J FT LAUDERDALE FL 33316- 1714'
+      address: '1489 SE 17TH ST STE 2J FT LAUDERDALE FL 33316- 1714, EEUU'
     }
   ]
 
@@ -24,11 +24,11 @@ const ContactDetails = () => {
       <Grid item xs={12} style={{height: '100%'}}>
         <Carousel
           className={classes.carousel}
-          animation="fade"
-          interval={15000}
+          animation="slide"
+          interval={12000}
         >
           {
-            ( items.map( (item, i) => (
+            (items.map( (item, i) => (
               <Paper elevation={2} className={classes.paperInfo} key={i}>
                 <Grid container
                   direction="row"

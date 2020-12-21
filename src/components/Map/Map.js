@@ -4,6 +4,7 @@ import React from 'react'
 import LocationPin from './LocationPin/LocationPin'
 import './Map.css'
 import { useStyles } from './MapStyles'
+import Fade from 'react-reveal/Fade'
 
 const Map = ({location, zoomLevel}) => {
   const classes = useStyles()
@@ -13,6 +14,7 @@ const Map = ({location, zoomLevel}) => {
   return (
     <div style={{ width: '100%' }} className="map">
       <Container>
+      <Fade bottom>
         <Typography variant='h4' align='center' className={classes.titleContact}>CONOZCA DÓNDE ESTAMOS UBICADOS</Typography>
         <div className={classes.map}>
           <GoogleMapReact            
@@ -34,7 +36,9 @@ const Map = ({location, zoomLevel}) => {
             />
           </GoogleMapReact>
         </div>
+      </Fade>
       </Container>
+      
     </div>
   )
 }
