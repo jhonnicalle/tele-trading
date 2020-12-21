@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/tele-trading/static/css/main.9c877600.chunk.css",
-    "main.js": "/tele-trading/static/js/main.ccb14c1f.chunk.js",
-    "main.js.map": "/tele-trading/static/js/main.ccb14c1f.chunk.js.map",
+    "main.js": "/tele-trading/static/js/main.8f1d0746.chunk.js",
+    "main.js.map": "/tele-trading/static/js/main.8f1d0746.chunk.js.map",
     "runtime-main.js": "/tele-trading/static/js/runtime-main.b1381e78.js",
     "runtime-main.js.map": "/tele-trading/static/js/runtime-main.b1381e78.js.map",
     "static/js/2.ce25d8b8.chunk.js": "/tele-trading/static/js/2.ce25d8b8.chunk.js",
     "static/js/2.ce25d8b8.chunk.js.map": "/tele-trading/static/js/2.ce25d8b8.chunk.js.map",
     "index.html": "/tele-trading/index.html",
-    "precache-manifest.029484f015c97691ccf52dff6aed4aa2.js": "/tele-trading/precache-manifest.029484f015c97691ccf52dff6aed4aa2.js",
+    "precache-manifest.b4594b8490e36e33eb1da3de8cd9710b.js": "/tele-trading/precache-manifest.b4594b8490e36e33eb1da3de8cd9710b.js",
     "service-worker.js": "/tele-trading/service-worker.js",
     "static/css/main.9c877600.chunk.css.map": "/tele-trading/static/css/main.9c877600.chunk.css.map",
     "static/js/2.ce25d8b8.chunk.js.LICENSE.txt": "/tele-trading/static/js/2.ce25d8b8.chunk.js.LICENSE.txt",
@@ -24,6 +24,6 @@
     "static/js/runtime-main.b1381e78.js",
     "static/js/2.ce25d8b8.chunk.js",
     "static/css/main.9c877600.chunk.css",
-    "static/js/main.ccb14c1f.chunk.js"
+    "static/js/main.8f1d0746.chunk.js"
   ]
 }
